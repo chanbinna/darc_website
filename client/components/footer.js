@@ -30,11 +30,17 @@ const Footer = () => {
                 </Link>
 
                 <div className={styles.footerInfo2}>
-                    <p>등록 번호: 216-82-69731</p>
+                    <p>고유 번호: 339-82-00675</p>
                     <p>인천 다르크 이사장: 최진묵</p>
                     <p>TEL: +82 70-4046-1445</p>
                 </div>
 
+
+                <div className={styles.footerInfo3}>
+                    <p>
+                        사무실 주소: 미추홀구 독정이로 96, 2층 202호
+                    </p>
+                </div>
 
 
                 <div className={styles.footerInfo}>

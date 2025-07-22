@@ -2,12 +2,12 @@
 
 import React, { useState } from 'react';
 import Navigation from "../../../../components/navigation";
-import styles from "./mission.module.css";
+import styles from "./vision.module.css";
 import Link from "next/link";
 import Footer from '../../../../components/footer';
 import ScrollToTop from '../../../../components/ScrollToTop';
 
-export default function Mission() {
+export default function vision() {
     const [hoveredCircle, setHoveredCircle] = useState(null);
 
     const handleMouseEnter = (circle) => {
@@ -26,16 +26,16 @@ export default function Mission() {
                 <div className={styles.content}>
                     <div className={styles.header}>
                         <div className={styles.title}>
-                            <h1>Mission.</h1>
+                            <h1>Vision.</h1>
                         </div>
                         <div className={styles.link}>
-                            <Link href="/aboutus/mission">About us</Link>
+                            <Link href="/aboutus/vision">About us</Link>
                             <p>&gt;</p>
-                            <Link href="/aboutus/mission"><h4>mission</h4></Link>
+                            <Link href="/aboutus/vision"><h4>vision</h4></Link>
                         </div>
                     </div>
                     <div className={styles.chart}>
-                        <img src="/mission-1.png" alt="" />
+                        <img src="/vision.png" alt="" />
                     </div>
                 </div>
                 <Footer />

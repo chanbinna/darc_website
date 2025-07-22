@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.main {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.content {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.header {
+    width: 80%;
+    max-width: 1200px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    height: 100%;
+    width: 50%; /* Ensure it takes up half of the header */
+    font-family: 'Times New Roman', Times, serif;
+    color: #19428b;
+}
+
+.link {
+    height: 100%;
+    width: 50%; /* Ensure it takes up half of the header */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    font-size: 18px; /* Adjust the font size as needed */
+    text-align: right;
+}
+
+.link p {
+    margin: 0 10px; /* Add some space around the ">" symbol */
+}
+
+.link a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link a:hover {
+    color: #4e73ac; /* Change to desired hover color */
+}
+
+.link h4 {
+    margin: 0;
+    transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.link h4:hover {
+    color: #4e73ac; /* Change to desired hover color */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.left {
+    position: relative;
+    width: 650px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.chart {
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.chart > img {
+    width: 80%;
+}
+
+
+@media (max-width: 450px) {
+    .content {
+        margin-top: 120px;
+        overflow: hidden;
+    }
+
+    .header {
+        flex-direction: column; /* Stack the link and title vertically */
+        align-items: flex-start; /* Align both link and title to the left */
+        width: 85%;
+        max-width: 1200px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .link {
+        order: -1; /* Move the link above the title */
+        width: 100%; /* Make the link take full width */
+        justify-content: flex-start; /* Align the link to the left */
+        margin-bottom: 0px; /* Add some space between link and title */
+    }
+
+    .title {
+        width: 100%; /* Make the title take full width */
+        text-align: left; /* Align the title text to the left */
+        margin-top: -10px;
+        height: 70px;
+    }
+
+    .chart {
+        width: 85%;
+        margin-top: 15px;
+    }
+    .chart > img {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+    .content {
+        margin-top: 110px;
+    }
+    .header {
+        width: 85%;
+    }
+
+    .chart {
+        width: 85%;
+        margin-top: 20px;
+    }
+
+    .chart > img {
+        width: 100%;
+    }
+   
+}
+
+
+@media (min-width: 768px) and (max-width: 1194px) {
+    .header {
+        width: 85%;
+    }
+
+
+    .chart {
+        width: 85%;
+        margin-top: 30px;
+    }
+
+    .chart > img {
+        width: 100%;
+    }
+}

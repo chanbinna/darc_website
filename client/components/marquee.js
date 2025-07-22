@@ -9,6 +9,8 @@ const Marquee = () => {
         '/marquee5.png',
         '/marquee6.png',
         '/marquee2.png',
+        '/marquee8.png',
+        '/marquee9.png',
         '/marquee7.png',
         // Add more items as needed
     ];

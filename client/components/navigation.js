@@ -174,7 +174,10 @@ export default function Navigation({ activeIndex }) {
                         {menuPage === 5 && (
                             <ul>
                                 <li><Link href="/aboutus/chairman">이사장님 말씀</Link></li>
+                                <li><Link href="/aboutus/value">가치</Link></li>
+                                <li><Link href="/aboutus/vision">비전</Link></li>
                                 <li><Link href="/aboutus/mission">미션</Link></li>
+                                <li><Link href="/aboutus/philosophy">철학</Link></li>
                                 <li><Link href="/aboutus/his/korea">역사</Link></li>
                                 <li><Link href="/aboutus/his/korea" >Korea</Link></li>
                                 <li><Link href="/aboutus/his/japan" >Japan</Link></li>
@@ -278,7 +281,10 @@ export default function Navigation({ activeIndex }) {
                                     <Link href="/aboutus/chairman"><h4>이사장님 말씀</h4></Link>
                                 </div>
                                 <div className={styles.column}>
-                                    <Link href="/aboutus/mission"><h4>미션</h4></Link>
+                                    <Link href="/aboutus/value"><h4>가치</h4></Link>
+                                    <Link href="/aboutus/vision">비전</Link>
+                                    <Link href="/aboutus/mission">미션</Link>
+                                    <Link href="/aboutus/philosophy">철학</Link>
                                 </div>
                                 <div className={styles.column}>
                                     <Link href="/aboutus/his/korea"><h4>역사</h4></Link>

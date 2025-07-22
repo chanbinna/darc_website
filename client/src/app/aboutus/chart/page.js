@@ -19,7 +19,7 @@ export default function Chart() {
                 <div className={styles.content}>
                     <div className={styles.header}>
                         <div className={styles.title}>
-                            <h1>조직도. <span style={{ color: "#e23122" }}>(준비중)</span></h1>
+                            <h1>조직도.</h1>
                         </div>
                         <div className={styles.link}>
                             <Link href="/aboutus/chart">About us</Link>
@@ -33,7 +33,7 @@ export default function Chart() {
 
                     <div className={styles.contentBox}>
                         <div className={styles.photobox}>
-                            <img src="/pplchart.png" alt="Organization Chart" />
+                            <img src="/pplchart2.png" alt="Organization Chart" />
                             <div className={styles.logo}>
                             </div>
                         </div>

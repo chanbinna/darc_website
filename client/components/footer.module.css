@@ -64,7 +64,11 @@
     justify-content: center; /* Center the items */
     align-items: center; /* Vertically align items */
     gap: 15px; /* Space between the text items */
-    margin-bottom: 10px; /* Space between footerInfo2 and footerInfo */
+  }
+
+  .footerInfo3 {
+    margin: 0;
+    margin-top: -14px;
   }
   
   .footerInfo {

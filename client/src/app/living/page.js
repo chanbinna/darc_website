@@ -24,7 +24,7 @@ export default function Review() {
                 <div className={styles.content}>
                     <div className={styles.header}>
                         <div className={styles.title}>
-                            <h1>시설 안내. <span style={{ color: "#e23122" }}>(준비중)</span></h1>
+                            <h1>시설 안내.</h1>
                         </div>
                         <div className={styles.link}>
                             <Link href="/">Home</Link>
