@@ -7,7 +7,7 @@ import Link from "next/link";
 import Footer from '../../../../components/footer';
 import ScrollToTop from '../../../../components/ScrollToTop';
 
-export default function vision() {
+export default function Vision() {
     const [hoveredCircle, setHoveredCircle] = useState(null);
 
     const handleMouseEnter = (circle) => {

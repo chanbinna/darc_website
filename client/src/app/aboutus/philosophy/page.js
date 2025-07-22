@@ -7,7 +7,7 @@ import Link from "next/link";
 import Footer from '../../../../components/footer';
 import ScrollToTop from '../../../../components/ScrollToTop';
 
-export default function philosophy() {
+export default function Philosophy() {
     const [hoveredCircle, setHoveredCircle] = useState(null);
     const [selectedTab, setSelectedTab] = useState("철학");
 
