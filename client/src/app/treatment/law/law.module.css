@@ -1,244 +1,239 @@
 /* Styles for the main content */
 .main {
-    font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .content {
-    margin-top: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 200px;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
 }
 
 .header {
-    width: 80%;
-    max-width: 1200px;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
+  width: 80%;
+  max-width: 1200px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
 }
 
 .title {
-    font-family: 'Times New Roman', Times, serif;
-    height: 100%;
-    width: 50%;
-    color: #19428b;
+  /* font-family: 'Times New Roman', Times, serif; */
+  height: 100%;
+  width: 50%;
+  color: #19428b;
 }
 
 .link {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 18px;
-    text-align: right;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  text-align: right;
 }
 
 .link p {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .link a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .link a:hover {
-    color: #4e73ac;
+  color: #4e73ac;
 }
 
 .link h4 {
-    margin: 0;
-    transition: color 0.3s;
+  margin: 0;
+  transition: color 0.3s;
 }
 
 .link h4:hover {
-    color: #4e73ac;
+  color: #4e73ac;
 }
 
 /* Styles for content box */
 .contentBox {
-    margin-top: 20px;
-    width: 80%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  margin-top: 20px;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .box {
-    width: 45%;
-    height: 400px;
-    padding: 10px 30px;
-    border-radius: 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    background-image: url(/law.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+  width: 45%;
+  height: 400px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  background-image: url(/law.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .buttonContainer {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
 
 .box button {
-    font-size: 16px;
-    background-color: rgb(219, 219, 219);
-    border-radius: 10px;
-    height: 40px;
-    width: 120px;
-    border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+  font-size: 16px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .box h2 {
-    color: #19428b;
+  color: #19428b;
 }
 
 .box button:hover {
-    background-color: #d2d2d2;
+  background-color: #d2d2d2;
 }
 
 /* Modal styles */
 .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 .modalContent {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 600px;
-    max-width: 90%;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-    height: 60vh; /* Make the modal content taller */
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack the content vertically */
-    justify-content: space-between; /* Push the close button to the bottom */
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 90%;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  height: 60vh; /* Make the modal content taller */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack the content vertically */
+  justify-content: space-between; /* Push the close button to the bottom */
 }
 
 .modalContent h2 {
-    color: #19428b;
-    font-size: 23px;
+  color: #19428b;
+  font-size: 23px;
 }
 
 .modalContent p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.45;
-    margin-bottom: 20px;
-    flex-grow: 1; /* Allow text content to expand */
+  font-size: 16px;
+  color: #555;
+  line-height: 1.45;
+  margin-bottom: 20px;
+  flex-grow: 1; /* Allow text content to expand */
 }
 
 .modalContent button {
-    font-size: 16px;
-    background-color: rgb(219, 219, 219);
-    border-radius: 10px;
-    height: 40px;
-    width: 120px;
-    border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
-    align-self: center; /* Center the button horizontally */
-    margin-top: 20px; /* Add margin to the top */
+  font-size: 16px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+  height: 40px;
+  width: 120px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  align-self: center; /* Center the button horizontally */
+  margin-top: 20px; /* Add margin to the top */
 }
 
 .modalContent button:hover {
-    background-color: #d2d2d2;
+  background-color: #d2d2d2;
 }
 
 @media (max-width: 450px) {
-    .content {
-        margin-top: 120px;
-    }
+  .content {
+    margin-top: 120px;
+  }
 
-    .header {
-        flex-direction: column; /* Stack the link and title vertically */
-        align-items: flex-start; /* Align both link and title to the left */
-        width: 85%;
-        max-width: 1200px;
-        height: auto;
-        margin-bottom: 10px;
-    }
+  .header {
+    flex-direction: column; /* Stack the link and title vertically */
+    align-items: flex-start; /* Align both link and title to the left */
+    width: 85%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
-    .link {
-        order: -1; /* Move the link above the title */
-        width: 100%; /* Make the link take full width */
-        justify-content: flex-start; /* Align the link to the left */
-        margin-bottom: 0px; /* Add some space between link and title */
-    }
+  .link {
+    order: -1; /* Move the link above the title */
+    width: 100%; /* Make the link take full width */
+    justify-content: flex-start; /* Align the link to the left */
+    margin-bottom: 0px; /* Add some space between link and title */
+  }
 
-    .title {
-        width: 100%; /* Make the title take full width */
-        text-align: left; /* Align the title text to the left */
-        margin-top: -10px;
-        height: 70px;
-    }
+  .title {
+    width: 100%; /* Make the title take full width */
+    text-align: left; /* Align the title text to the left */
+    margin-top: -10px;
+    height: 70px;
+  }
 
-    .contentBox {
-        width: 85%;
-    }
+  .contentBox {
+    width: 85%;
+  }
 
-    .box {
-        width: 100%;
-        height: 410px;
-        background-size: 1000px; /* Adjust the background size for mobile */
-        background-position: center;
-    }
+  .box {
+    width: 100%;
+    height: 410px;
+    background-size: 1000px; /* Adjust the background size for mobile */
+    background-position: center;
+  }
 
-    .modalContent {
-        height: 75vh;
-    }
-
+  .modalContent {
+    height: 75vh;
+  }
 }
 
 @media (min-width: 450px) and (max-width: 768px) {
-    .content {
-        margin-top: 110px;
-    }
-    .header {
-        width: 85%;
-    }
+  .content {
+    margin-top: 110px;
+  }
+  .header {
+    width: 85%;
+  }
 
-    .contentBox {
-        width: 85%;
-    }
+  .contentBox {
+    width: 85%;
+  }
 
-    .box {
-        width: 75%;
-    }
-   
+  .box {
+    width: 75%;
+  }
 }
 
-
 @media (min-width: 768px) and (max-width: 1194px) {
-    .header {
-        width: 85%;
-    }
+  .header {
+    width: 85%;
+  }
 
+  .contentBox {
+    width: 85%;
+  }
 
-    .contentBox {
-        width: 85%;
-    }
-    
-  
-    .box {
-        width: 70%;
-    }
+  .box {
+    width: 70%;
+  }
 }

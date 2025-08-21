@@ -27,12 +27,12 @@ export default function Mission() {
                 <div className={styles.content}>
                     <div className={styles.header}>
                         <div className={styles.title}>
-                            <h1>자료실.</h1>
+                            <h1>자료실</h1>
                         </div>
                         <div className={styles.link}>
                             <Link href="/contact/resources">Contact</Link>
                             <p>&gt;</p>
-                            <Link href="/contact/media"><h4>자료실.</h4></Link>
+                            <Link href="/contact/media"><h4>자료실</h4></Link>
                         </div>
                     </div>
                     <div className={styles.noticeWrapper}>

@@ -14,9 +14,12 @@ import ScrollToTop from "../../../../components/ScrollToTop";
 import { FaL } from "react-icons/fa6";
 import dynamic from "next/dynamic";
 
-const NoticeClient = dynamic(() => import("../../../../components/NoticeClient"), {
-  ssr: false,
-});
+const NoticeClient = dynamic(
+  () => import("../../../../components/NoticeClient"),
+  {
+    ssr: false,
+  }
+);
 
 export default function Announcement() {
   return (
@@ -27,13 +30,13 @@ export default function Announcement() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>공지사항.</h1>
+              <h1>공지사항</h1>
             </div>
             <div className={styles.link}>
-              <Link href="/contact/resources">Contact</Link>
+              <Link href='/contact/resources'>Contact</Link>
               <p>&gt;</p>
-              <Link href="/contact/announcement">
-                <h4>공지사항.</h4>
+              <Link href='/contact/announcement'>
+                <h4>공지사항</h4>
               </Link>
             </div>
           </div>

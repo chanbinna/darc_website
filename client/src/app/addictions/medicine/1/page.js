@@ -26,7 +26,7 @@ export default function Medicine1() {
                 <div className={styles.content}>
                     <div className={styles.header}>
                         <div className={styles.title}>
-                            <h1>치료 약물.</h1>
+                            <h1>치료 약물</h1>
                         </div>
                         <div className={styles.link}>
                             <Link href="/addictions">Addictions</Link>
