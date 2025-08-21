@@ -12,7 +12,7 @@ export default function Value() {
 
   const handleMouseEnter = (circle) => {
     setHoveredCircle(circle);
-};
+  };
 
   const handleMouseLeave = () => {
     setHoveredCircle(null);
@@ -26,13 +26,13 @@ export default function Value() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Value</h1>
+              <h1>가치</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/aboutus/value'>About us</Link>
+              <Link href='/aboutus/value'>재단 소개</Link>
               <p>&gt;</p>
               <Link href='/aboutus/value'>
-                <h4>value</h4>
+                <h4>가치</h4>
               </Link>
             </div>
           </div>

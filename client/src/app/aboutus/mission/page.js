@@ -26,13 +26,13 @@ export default function Mission() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Mission</h1>
+              <h1>미션</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/aboutus/mission'>About us</Link>
+              <Link href='/aboutus/mission'>재단 소개</Link>
               <p>&gt;</p>
               <Link href='/aboutus/mission'>
-                <h4>mission</h4>
+                <h4>미션</h4>
               </Link>
             </div>
           </div>

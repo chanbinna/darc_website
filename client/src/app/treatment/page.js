@@ -19,13 +19,10 @@ export default function Rehabilitation1() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>
-                Addiction <br />
-                Rehabilitation
-              </h1>
+              <h1>중독 재활</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/treatment/'>Treatment</Link>
+              <Link href='/treatment/'>재활/프로그램</Link>
               <p>&gt;</p>
               <Link href='/treatment/'>
                 <h4>중독 재활</h4>

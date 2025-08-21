@@ -27,10 +27,10 @@ export default function Japan() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>History of DARC</h1>
+              <h1>다르크의 역사</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/aboutus/his/korea'>About us</Link>
+              <Link href='/aboutus/his/korea'>재단 소개</Link>
               <p>&gt;</p>
               <Link href='/aboutus/his/korea'>
                 <h4>다르크의 역사</h4>

@@ -30,10 +30,10 @@ export default function Program1() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Donation</h1>
+              <h1>기부</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/donations/volunteer'>Donations</Link>
+              <Link href='/donations/volunteer'>후원</Link>
               <p>&gt;</p>
               <Link href='/donations/support'>
                 <h4>기부</h4>

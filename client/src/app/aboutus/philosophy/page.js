@@ -27,13 +27,13 @@ export default function Philosophy() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Philosophy</h1>
+              <h1>철학</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/aboutus/philosophy'>About us</Link>
+              <Link href='/aboutus/philosophy'>재단 소개</Link>
               <p>&gt;</p>
               <Link href='/aboutus/philosophy'>
-                <h4>Philosophy</h4>
+                <h4>철학</h4>
               </Link>
             </div>
           </div>

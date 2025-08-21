@@ -237,13 +237,13 @@ export default function Program1() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Volunteer Work</h1>
+              <h1>자원봉사</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/donations/volunteer'>Donations</Link>
+              <Link href='/donations/volunteer'>후원</Link>
               <p>&gt;</p>
               <Link href='/donations/volunteer'>
-                <h4>자원 봉사</h4>
+                <h4>자원봉사</h4>
               </Link>
             </div>
           </div>

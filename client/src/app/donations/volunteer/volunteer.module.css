@@ -1,336 +1,327 @@
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap");
 
 .main {
-    font-family: "Noto Sans KR", sans-serif;
-    transition: filter 0.3s ease;
+  font-family: "Noto Sans KR", sans-serif;
+  transition: filter 0.3s ease;
 }
 
 .content {
-    margin-top: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
-    width: 80%;
-    max-width: 1200px;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
+  width: 80%;
+  max-width: 1200px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
 }
 
 .title {
-    font-family: 'Times New Roman', Times, serif;
-    height: 100%;
-    width: 50%; /* Ensure it takes up half of the header */
-    color: #19428b;
+  height: 100%;
+  width: 50%; /* Ensure it takes up half of the header */
+  color: #19428b;
 }
 
 .link {
-    height: 100%;
-    width: 50%; /* Ensure it takes up half of the header */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Align items to the right */
-    font-size: 18px; /* Adjust the font size as needed */
-    text-align: right;
+  height: 100%;
+  width: 50%; /* Ensure it takes up half of the header */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  font-size: 18px; /* Adjust the font size as needed */
+  text-align: right;
 }
 
 .link p {
-    margin: 0 10px; /* Add some space around the ">" symbol */
+  margin: 0 10px; /* Add some space around the ">" symbol */
 }
 
 .link a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .link a:hover {
-    color: #4e73ac; /* Change to desired hover color */
+  color: #4e73ac; /* Change to desired hover color */
 }
 
 .link h4 {
-    margin: 0;
-    transition: color 0.3s; /* Add transition for smooth color change */
+  margin: 0;
+  transition: color 0.3s; /* Add transition for smooth color change */
 }
 
 .link h4:hover {
-    color: #4e73ac; /* Change to desired hover color */
+  color: #4e73ac; /* Change to desired hover color */
 }
-
-
-
 
 .other:hover p {
-    color: gray;
+  color: gray;
 }
 
-
 .contentBox {
-    width: 80%;
-    max-width: 1200px;
-    height: auto;
-    overflow: hidden;
+  width: 80%;
+  max-width: 1200px;
+  height: auto;
+  overflow: hidden;
 }
 
 .contentBox h3 {
-    color: #3b3b3b;
+  color: #3b3b3b;
 }
 
 .picture1 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .picture1 img {
-    width: 850px;
-    filter:  brightness(80%) contrast(90%);
-    margin-bottom: 150px;
+  width: 850px;
+  filter: brightness(80%) contrast(90%);
+  margin-bottom: 150px;
 }
 
 .reviews {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .oneCard {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
 }
 
 .theme img {
-    width: 50px;
-    filter:  brightness(80%) contrast(90%);
+  width: 50px;
+  filter: brightness(80%) contrast(90%);
 }
 
 .ppl {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .review {
-    margin-top: 35px;
-    margin-left: 10px;
+  margin-top: 35px;
+  margin-left: 10px;
 }
 
 .review p {
-    margin-left: -50px;
+  margin-left: -50px;
 }
 
 .margin {
-    width: 100%;
-    height: 200px;
+  width: 100%;
+  height: 200px;
 }
 
 .application button {
-    text-decoration: none;
-    color: white;
-    background-color: #3b608c;
-    height: 50px;
-    width: 190px;
-    font-size: 20px;
-    border: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
-    border-radius: 20px;
-    font-weight: 400;
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    z-index: 999;
+  text-decoration: none;
+  color: white;
+  background-color: #3b608c;
+  height: 50px;
+  width: 190px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  font-weight: 400;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 999;
 }
 
 .application button:hover {
-    background-color: #436ea2;
+  background-color: #436ea2;
 }
 
-
 .main.blurred {
-    filter: blur(2px); 
-    /* filter: grayscale(100%); */
-    pointer-events: none; /* Prevent interaction with blurred content */
+  filter: blur(2px);
+  /* filter: grayscale(100%); */
+  pointer-events: none; /* Prevent interaction with blurred content */
 }
 
 /* Keep the popup overlay as the background dimming effect */
 .popupOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.08); */
-    z-index: 998; /* Ensure it's below the popup but above the rest */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.08); */
+  z-index: 998; /* Ensure it's below the popup but above the rest */
 }
 
 /* Popup content will be above everything */
 .popupContent {
-    background-color: white;
-    width: 80%;
-    /* height: 1000px; */
-    padding: 10px 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.20);
-    position: absolute;
-    top: 240px;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow-y: auto;
-    z-index: 999;
+  background-color: white;
+  width: 80%;
+  /* height: 1000px; */
+  padding: 10px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-y: auto;
+  z-index: 999;
 }
 
 .popHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .closebutton {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
-    color: black;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 25px;
-    text-align: center;
-    line-height: 40px; /* Align the "X" vertically */
-    background-color: transparent; /* Ensure no background color issue */
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px; /* Align the "X" vertically */
+  background-color: transparent; /* Ensure no background color issue */
 }
 
-
-
 .popupContent img {
-    margin-top: 20px;
-    width: 160px;
+  margin-top: 20px;
+  width: 160px;
 }
 
 .popupContent h1 {
-    color:#244186;
-    margin-top: 14px;
-    font-size: 30px;
-    margin-bottom: 30px;
+  color: #244186;
+  margin-top: 14px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .forms1 {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-between; /* Space between the two columns */
-    gap: 20px; /* Gap between form fields */
-    width: 100%; /* Ensure the form takes the full width of its container */
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between; /* Space between the two columns */
+  gap: 20px; /* Gap between form fields */
+  width: 100%; /* Ensure the form takes the full width of its container */
 }
 
 .formsDivide {
-    flex: 1; /* Make sure the columns take equal width */
-    margin-bottom: 18px;
-    display: flex;
-    flex-direction: column;
+  flex: 1; /* Make sure the columns take equal width */
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
 }
 
 .formsDivide label {
-    font-size: 17px;
-    margin-bottom: 5px;
-    min-height: 10px; /* Set the same height for both labels */
-    display: flex;
-    align-items: flex-end; /* Ensure the label text aligns to the bottom */
+  font-size: 17px;
+  margin-bottom: 5px;
+  min-height: 10px; /* Set the same height for both labels */
+  display: flex;
+  align-items: flex-end; /* Ensure the label text aligns to the bottom */
 }
 
 .formsDivide input {
-    width: 100%; /* Ensure inputs take full width of the column */
-    padding: 15px;
-    border: 1.5px solid #244186;
-    font-size: 18px;
-    box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
-    border-radius: 0;
+  width: 100%; /* Ensure inputs take full width of the column */
+  padding: 15px;
+  border: 1.5px solid #244186;
+  font-size: 18px;
+  box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
+  border-radius: 0;
 }
 
 .formsDivide label {
-    display: block; /* Ensure the label spans across multiple lines */
+  display: block; /* Ensure the label spans across multiple lines */
 }
 
 .required {
-    color: #244186; /* Color for the * symbol */
-    margin-right: 5px; /* Add some space between * and the text */
+  color: #244186; /* Color for the * symbol */
+  margin-right: 5px; /* Add some space between * and the text */
 }
 
 .boldText {
-    font-weight: bold; /* Bold text outside the parentheses */
+  font-weight: bold; /* Bold text outside the parentheses */
 }
 
 .formFull {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
 }
 
 .formFull label {
-    font-size: 17px;
-    margin-bottom: 5px;
-    min-height: 10px; /* Set the same height for both labels */
-    display: flex;
-    align-items: flex-end; /* Ensure the label text aligns to the bottom */
+  font-size: 17px;
+  margin-bottom: 5px;
+  min-height: 10px; /* Set the same height for both labels */
+  display: flex;
+  align-items: flex-end; /* Ensure the label text aligns to the bottom */
 }
 
 .formFull input {
-    width: 100%; /* Ensure inputs take full width of the column */
-    padding: 15px;
-    border: 1.5px solid #244186;
-    font-size: 18px;
-    box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
-    border-radius: 0;
+  width: 100%; /* Ensure inputs take full width of the column */
+  padding: 15px;
+  border: 1.5px solid #244186;
+  font-size: 18px;
+  box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
+  border-radius: 0;
 }
 
 .formEmail {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
 }
 
 .formEmail label {
-    font-size: 17px;
-    margin-bottom: 5px;
+  font-size: 17px;
+  margin-bottom: 5px;
 }
 
 .emailBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
 .formEmail select {
-    width: 30%; /* Adjust the width as per the design */
-    padding: 15px;
-    margin-left: 10px;
-    border: 1.5px solid #244186;
-    font-size: 18px;
-    box-sizing: border-box;
-    background-color: white; /* Optional: change background color */
-    appearance: none; /* Remove default OS-specific dropdown arrow */
-    -webkit-appearance: none; /* For Safari */
-    -moz-appearance: none; /* For Firefox */
-    border-radius: 0; /* Match the input's look if it doesn't have rounded corners */
+  width: 30%; /* Adjust the width as per the design */
+  padding: 15px;
+  margin-left: 10px;
+  border: 1.5px solid #244186;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: white; /* Optional: change background color */
+  appearance: none; /* Remove default OS-specific dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  border-radius: 0; /* Match the input's look if it doesn't have rounded corners */
 }
 
 .formEmail select {
-    background-image: url('/dropdown.svg');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 15px;
+  background-image: url("/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 15px;
 }
 
 /* Adjust input style to ensure select and input fields are visually consistent */
 .formEmail input {
-    width: 33%; /* Same width as select */
-    padding: 15px;
-    border: 1.5px solid #244186;
-    font-size: 18px;
-    box-sizing: border-box;
-    border-radius: 0;
+  width: 33%; /* Same width as select */
+  padding: 15px;
+  border: 1.5px solid #244186;
+  font-size: 18px;
+  box-sizing: border-box;
+  border-radius: 0;
 }
 
 /* Remove the default outline on focus and apply a custom one */
@@ -338,387 +329,375 @@
 .formFull input:focus,
 .formEmail select:focus,
 .formEmail input:focus {
-    outline: none;
-    border-color: #436ea2; /* Optional: Focus color */
-    box-shadow: 0 0 5px rgba(67, 110, 162, 0.5);
+  outline: none;
+  border-color: #436ea2; /* Optional: Focus color */
+  box-shadow: 0 0 5px rgba(67, 110, 162, 0.5);
 }
 
 .calendarContainer {
-    display: flex;
-    gap: 3px; /* Add space between the calendars */
-    align-items: center; /* Align them vertically */
+  display: flex;
+  gap: 3px; /* Add space between the calendars */
+  align-items: center; /* Align them vertically */
 }
 
 .calendarInput {
-    width: 100%; /* Adjust width to ensure both calendars take the same space */
-    max-width: 300px; /* Set a max-width if needed */
+  width: 100%; /* Adjust width to ensure both calendars take the same space */
+  max-width: 300px; /* Set a max-width if needed */
 }
 
 .atSign {
-    margin: 0 10px; /* Add space between the calendars and the tilde (~) */
-    font-size: 18px; /* Adjust size for the separator */
-    color: #000; /* Set color */
+  margin: 0 10px; /* Add space between the calendars and the tilde (~) */
+  font-size: 18px; /* Adjust size for the separator */
+  color: #000; /* Set color */
 }
 
 .clickbox {
-    width: 100%;
-    padding: 15px;
-    border: 1.5px solid #244186;
-    font-size: 18px;
-    box-sizing: border-box;
-    border-radius: 0;
-    min-height: 60px; /* Ensure consistent height */
+  width: 100%;
+  padding: 15px;
+  border: 1.5px solid #244186;
+  font-size: 18px;
+  box-sizing: border-box;
+  border-radius: 0;
+  min-height: 60px; /* Ensure consistent height */
 }
 
 .checkboxContainer {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .checkboxContainer label {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .boxbox {
-    display: flex;
-    margin-right: 20px;
-    gap: 8px;
+  display: flex;
+  margin-right: 20px;
+  gap: 8px;
 }
 
 .formFull2 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
 }
 
 .formFull2 label {
-    font-size: 17px;
-    margin-bottom: 5px;
-    min-height: 10px; /* Set the same height for both labels */
-    display: flex;
-    align-items: flex-end; /* Ensure the label text aligns to the bottom */
+  font-size: 17px;
+  margin-bottom: 5px;
+  min-height: 10px; /* Set the same height for both labels */
+  display: flex;
+  align-items: flex-end; /* Ensure the label text aligns to the bottom */
 }
 
 .formFull2 textarea {
-    width: 100%; /* Ensure inputs take full width of the column */
-    padding: 15px;
-    border: 1.5px solid #244186;
-    font-size: 18px;
-    box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
-    height: 130px;
-    font-family: "Noto Sans KR", sans-serif;
-    border-radius: 0;
+  width: 100%; /* Ensure inputs take full width of the column */
+  padding: 15px;
+  border: 1.5px solid #244186;
+  font-size: 18px;
+  box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
+  height: 130px;
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 0;
 }
 
 .lastbox {
-    margin-top: 40px;
-    height: auto;
-    width: 100%; /* Ensure inputs take full width of the column */
-    border: 2.5px solid #244186;
-    font-size: 18px;
-    padding: 10px 20px;
-    line-height: 20px;
+  margin-top: 40px;
+  height: auto;
+  width: 100%; /* Ensure inputs take full width of the column */
+  border: 2.5px solid #244186;
+  font-size: 18px;
+  padding: 10px 20px;
+  line-height: 20px;
 }
 
 .lastbox h3 {
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-    font-size: 20px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  font-size: 20px;
 }
 
 .lastbox h4 {
-    margin-top: 17px;
-    margin-bottom: -10px;
+  margin-top: 17px;
+  margin-bottom: -10px;
 }
 
 .lastbox p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .smallBox {
-    width: 100%; /* Ensure inputs take full width of the column */
-    padding: 0px 10px;
-    border: 1.5px solid #244186;
-    font-size: 18px;
-    height: 40px;
-    box-sizing: border-box;
-    margin-top: -10px;
-    display: flex;
-    align-items: center;
-    position: relative;
+  width: 100%; /* Ensure inputs take full width of the column */
+  padding: 0px 10px;
+  border: 1.5px solid #244186;
+  font-size: 18px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .lastText p {
-    color: rgb(101, 101, 101);
-    font-size: 16px;
+  color: rgb(101, 101, 101);
+  font-size: 16px;
 }
 
 .selectBox {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    font-size: 16px;
-    position: absolute;
-    right: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 16px;
+  position: absolute;
+  right: 25px;
 }
 
 .selectBox label {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 .boxboxbox {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .requiredText {
-    color: #244186;
-    font-size: 14px;
-    font-weight: 600;
+  color: #244186;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .submit {
-    width: 150px;
-    height: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: #244186;
-    color: white;
-    font-size: 15px;
-    border: none;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #244186;
+  color: white;
+  font-size: 15px;
+  border: none;
 }
 
 .submit:hover {
-    background-color: #3b608c;
+  background-color: #3b608c;
 }
 
 .errorMessage {
-    color: red;
-    margin-bottom: 10px;
+  color: red;
+  margin-bottom: 10px;
 }
 
 .submittedPopup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000;
 }
 
 .picBox,
 .picBox2 {
-    width: 85%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center; /* Center align horizontally */
-    align-items: center; /* Center align vertically */
-    margin: 0 auto; /* Ensure the container itself is centered */
+  width: 85%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  margin: 0 auto; /* Ensure the container itself is centered */
 }
 
 .picBox img {
-    width: 100%; /* Make sure images take full width of container */
-    max-width: 1000px; /* Set a max width for images */
-    display: block;
+  width: 100%; /* Make sure images take full width of container */
+  max-width: 1000px; /* Set a max width for images */
+  display: block;
 }
 
-
-
 .picBox2 img {
-    margin-top: 100px;
-    width: 100%; /* Make sure images take full width of container */
-    max-width: 1000px; /* Set a max width for images */
-    display: block;
-
+  margin-top: 100px;
+  width: 100%; /* Make sure images take full width of container */
+  max-width: 1000px; /* Set a max width for images */
+  display: block;
 }
 
 @media (max-width: 450px) {
-    .content {
-        margin-top: 120px;
-        margin-bottom: 100px;
-    }
+  .content {
+    margin-top: 120px;
+    margin-bottom: 100px;
+  }
 
-    .header {
-        flex-direction: column; /* Stack the link and title vertically */
-        align-items: flex-start; /* Align both link and title to the left */
-        width: 85%;
-        max-width: 1200px;
-        height: auto;
-        margin-bottom: 10px;
-    }
+  .header {
+    flex-direction: column; /* Stack the link and title vertically */
+    align-items: flex-start; /* Align both link and title to the left */
+    width: 85%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
-    .link {
-        order: -1; /* Move the link above the title */
-        width: 100%; /* Make the link take full width */
-        justify-content: flex-start; /* Align the link to the left */
-        margin-bottom: 0px; /* Add some space between link and title */
-    }
+  .link {
+    order: -1; /* Move the link above the title */
+    width: 100%; /* Make the link take full width */
+    justify-content: flex-start; /* Align the link to the left */
+    margin-bottom: 0px; /* Add some space between link and title */
+  }
 
-    .title {
-        width: 100%; /* Make the title take full width */
-        text-align: left; /* Align the title text to the left */
-        margin-top: -10px;
-        height: 70px;
-    }
+  .title {
+    width: 100%; /* Make the title take full width */
+    text-align: left; /* Align the title text to the left */
+    margin-top: -10px;
+    height: 70px;
+  }
 
-    .contentBox {
-        width: 85%;
-    }
+  .contentBox {
+    width: 85%;
+  }
 
+  .picBox img {
+    width: 340px;
+    margin-top: 30px;
+  }
 
-   
-    .picBox img {
-        width: 340px;
-        margin-top: 30px;
-    }
-    
-    
-    
-    .picBox2 img {
-        width: 400px;
-        margin-top: 30px;
-    }
+  .picBox2 img {
+    width: 400px;
+    margin-top: 30px;
+  }
 
-    .contentBox h3 {
-        font-size: 20px;
-        margin-top: 8px;
-    }
+  .contentBox h3 {
+    font-size: 20px;
+    margin-top: 8px;
+  }
 
-    .popupContent {
-        width: 90%;
-        top: 160px;
-    }
+  .popupContent {
+    width: 90%;
+    top: 160px;
+  }
 
-    .closebutton {
-        width: 35px; /* Adjust button size for mobile */
-        height: 35px;
-        font-size: 18px; /* Adjust font size for smaller screens */
-        line-height: 35px; /* Keep the "X" vertically centered */
-        top: 10px;
-    }
+  .closebutton {
+    width: 35px; /* Adjust button size for mobile */
+    height: 35px;
+    font-size: 18px; /* Adjust font size for smaller screens */
+    line-height: 35px; /* Keep the "X" vertically centered */
+    top: 10px;
+  }
 
-    .forms1 {
-        flex-direction: column;
-        gap: 5px;
-    }
+  .forms1 {
+    flex-direction: column;
+    gap: 5px;
+  }
 
-    .clickbox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .clickbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .boxbox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+  .boxbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-    .boxbox label {
-        font-size: 12px;
-    }
+  .boxbox label {
+    font-size: 12px;
+  }
 
-    .selectBox {
-        position: relative;
-    }
+  .selectBox {
+    position: relative;
+  }
 
-    .smallBox {
-        flex-direction: column;
-        height: auto;
-        text-align: left;
-        padding-top: 0px;
-        padding-bottom: 10px;
-    }
+  .smallBox {
+    flex-direction: column;
+    height: auto;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
 
-    .smallBox p {
-        font-size: smaller;
-    }
-
+  .smallBox p {
+    font-size: smaller;
+  }
 }
 
 @media (min-width: 450px) and (max-width: 768px) {
-    .content {
-        margin-top: 110px;
-        margin-bottom: 100px;
-    }
-    .header {
-        width: 85%;
-    }
+  .content {
+    margin-top: 110px;
+    margin-bottom: 100px;
+  }
+  .header {
+    width: 85%;
+  }
 
-    .contentBox {
-        width: 85%;
-    }
+  .contentBox {
+    width: 85%;
+  }
 
-    .box {
-        width: 75%;
-    }
-    
-    .popupContent {
-        width: 83%;
-    }
+  .box {
+    width: 75%;
+  }
 
-    .closebutton {
-        top: 13px;
-    }
+  .popupContent {
+    width: 83%;
+  }
 
-    .selectBox {
-        position: relative;
-    }
+  .closebutton {
+    top: 13px;
+  }
 
-    .smallBox {
-        flex-direction: column;
-        height: auto;
-        text-align: left;
-        padding-top: 0px;
-        padding-bottom: 10px;
-    }
+  .selectBox {
+    position: relative;
+  }
 
-    .smallBox p {
-        font-size: smaller;
-    }
- 
+  .smallBox {
+    flex-direction: column;
+    height: auto;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
+
+  .smallBox p {
+    font-size: smaller;
+  }
 }
 
-
 @media (min-width: 768px) and (max-width: 1194px) {
-    .header {
-        width: 85%;
-    }
+  .header {
+    width: 85%;
+  }
 
+  .contentBox {
+    width: 85%;
+  }
 
-    .contentBox {
-        width: 85%;
-    }
-    
-  
-    .box {
-        width: 70%;
-    }
+  .box {
+    width: 70%;
+  }
 
-    .popupContent {
-        width: 83%;
-    }
+  .popupContent {
+    width: 83%;
+  }
 
-    .closebutton {
-        top: 13px;
-    }
+  .closebutton {
+    top: 13px;
+  }
 
-    .selectBox {
-        position: relative;
-    }
+  .selectBox {
+    position: relative;
+  }
 
-    .smallBox {
-        flex-direction: column;
-        height: auto;
-        text-align: left;
-        padding-top: 0px;
-        padding-bottom: 10px;
-    }
+  .smallBox {
+    flex-direction: column;
+    height: auto;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 10px;
+  }
 }

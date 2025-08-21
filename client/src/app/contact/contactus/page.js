@@ -38,13 +38,13 @@ export default function Mission() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Contact Us</h1>
+              <h1>문의하기</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/contact/contactus'>Contact</Link>
+              <Link href='/contact/contactus'>고객센터</Link>
               <p>&gt;</p>
               <Link href='/contact/contactus'>
-                <h4>Contact Us</h4>
+                <h4>문의하기</h4>
               </Link>
             </div>
           </div>

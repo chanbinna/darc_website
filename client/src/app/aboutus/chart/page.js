@@ -20,7 +20,7 @@ export default function Chart() {
               <h1>조직도</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/aboutus/chart'>About us</Link>
+              <Link href='/aboutus/chart'>재단 소개</Link>
               <p>&gt;</p>
               <Link href='/aboutus/chart'>
                 <h4>조직도</h4>

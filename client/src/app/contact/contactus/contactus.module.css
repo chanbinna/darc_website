@@ -1,204 +1,193 @@
 /* General Page Styles */
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main {
-    font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .content {
-    margin-top: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative; /* Allows the popup to be positioned relative to the content */
-    margin-bottom: 200px;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Allows the popup to be positioned relative to the content */
+  margin-bottom: 200px;
 }
 
 .header {
-    width: 80%;
-    max-width: 1200px;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
+  width: 80%;
+  max-width: 1200px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
 }
 
 .title {
-    height: 100%;
-    width: 50%;
-    font-family: 'Times New Roman', Times, serif;
-    color: #244186;
-    margin-bottom: 0;
+  height: 100%;
+  width: 50%;
+  color: #244186;
+  margin-bottom: 0;
 }
 
 .link {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 18px;
-    text-align: right;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 18px;
+  text-align: right;
 }
 
 .link p {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .link a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .link a:hover {
-    color: #4e73ac;
+  color: #4e73ac;
 }
-
 
 .textbox {
-    width: 80%;
-    max-width: 1200px;
-    height: 180px;
-    margin-top: -10px;
-    color: rgb(65, 65, 65);
+  width: 80%;
+  max-width: 1200px;
+  height: 180px;
+  margin-top: -10px;
+  color: rgb(65, 65, 65);
 }
 
-
 .effect {
-    height: 200px;
-    width: 80%;
-    max-width: 1200px;
+  height: 200px;
+  width: 80%;
+  max-width: 1200px;
 }
 
 .oneline {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: rgb(65, 65, 65);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(65, 65, 65);
 }
 
 .toggleButton {
-    position: relative;
-    right: 0;
-    background-color: #375194;
-    color: white;
-    border: none;
-    padding: 8px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
+  position: relative;
+  right: 0;
+  background-color: #375194;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
 }
 
 .toggleButton:hover {
-    background-color: #4e73ac;
+  background-color: #4e73ac;
 }
 
 .effectsContent {
-    margin-top: -20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, padding 0.3s ease;
-    padding: 0 0;
-    color: rgb(65, 65, 65);
+  margin-top: -20px;
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease,
+    padding 0.3s ease;
+  padding: 0 0;
+  color: rgb(65, 65, 65);
 }
 
 .effectsContent.show {
-    max-height: 700px; /* Adjust as needed */
-    padding: 4px 0; /* Adjust as needed */
+  max-height: 700px; /* Adjust as needed */
+  padding: 4px 0; /* Adjust as needed */
 }
 
 .effectsContent li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .widgetwrapper {
-    width: 80%;
-    max-width: 1200px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-
-
-
-
-
 @media (max-width: 450px) {
-    .content {
-        margin-top: 100px;
-        overflow: hidden;
-    }
+  .content {
+    margin-top: 100px;
+    overflow: hidden;
+  }
 
-    .header {
-        flex-direction: column; /* Stack the link and title vertically */
-        align-items: flex-start; /* Align both link and title to the left */
-        width: 85%;
-        max-width: 1200px;
-        height: auto;
-        margin-bottom: 10px;
-    }
+  .header {
+    flex-direction: column; /* Stack the link and title vertically */
+    align-items: flex-start; /* Align both link and title to the left */
+    width: 85%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
-    .link {
-        order: -1; /* Move the link above the title */
-        width: 100%; /* Make the link take full width */
-        justify-content: flex-start; /* Align the link to the left */
-        margin-bottom: 0px; /* Add some space between link and title */
-    }
+  .link {
+    order: -1; /* Move the link above the title */
+    width: 100%; /* Make the link take full width */
+    justify-content: flex-start; /* Align the link to the left */
+    margin-bottom: 0px; /* Add some space between link and title */
+  }
 
-    .title {
-        width: 100%; /* Make the title take full width */
-        text-align: left; /* Align the title text to the left */
-        margin-top: -30px;
-        height: 70px;
-    }
+  .title {
+    width: 100%; /* Make the title take full width */
+    text-align: left; /* Align the title text to the left */
+    margin-top: -30px;
+    height: 70px;
+  }
 
-    .pics h1 {
-        font-size: 25px;
-    }
+  .pics h1 {
+    font-size: 25px;
+  }
 
-    .button {
-        gap: 50px;
-    }
+  .button {
+    gap: 50px;
+  }
 
-    .effect {
-        height: auto;
-    }
+  .effect {
+    height: auto;
+  }
 
-    .effectsContent.show {
-
-        max-height: 1000px; /* Increase to fit the content */
-        padding: 4px 0;
-        transition: max-height 0.5s ease, padding 0.3s ease;
-    }
-
-
+  .effectsContent.show {
+    max-height: 1000px; /* Increase to fit the content */
+    padding: 4px 0;
+    transition:
+      max-height 0.5s ease,
+      padding 0.3s ease;
+  }
 }
 
 @media (min-width: 450px) and (max-width: 768px) {
-    .content {
-        margin-top: 110px;
-    }
-    .header {
-        width: 85%;
-    }
-   
+  .content {
+    margin-top: 110px;
+  }
+  .header {
+    width: 85%;
+  }
 }
 
-
 @media (min-width: 768px) and (max-width: 1194px) {
-    .header {
-        width: 85%;
-    }
-
-    
-  
+  .header {
+    width: 85%;
+  }
 }

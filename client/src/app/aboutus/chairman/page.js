@@ -16,10 +16,10 @@ export default function Chairman() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Director&#39;s Remarks</h1>
+              <h1>이사장님 말씀</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/aboutus/chairman'>About us</Link>
+              <Link href='/aboutus/chairman'>재단 소개</Link>
               <p>&gt;</p>
               <Link href='/aboutus/chairman'>
                 <h4>이사장님 말씀</h4>

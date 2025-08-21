@@ -20,13 +20,13 @@ export default function Mission() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Resources</h1>
+              <h1>SNS</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/contact/resources'>Contact</Link>
+              <Link href='/contact/resources'>고객센터</Link>
               <p>&gt;</p>
               <Link href='/contact/resources'>
-                <h4>Resources</h4>
+                <h4>SNS</h4>
               </Link>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function Mission() {
               className={styles.leftLink}
               onClick={() =>
                 window.open("https://t.me/+821084801445", "_blank")
-            }
+              }
             >
               <h1>
                 <FaTelegramPlane />

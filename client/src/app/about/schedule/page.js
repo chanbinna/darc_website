@@ -16,15 +16,15 @@ export default function Schedule() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Schedule</h1>
+              <h1>일정 안내</h1>
               <h3>인천 다르크에서의 생활</h3>
             </div>
 
             <div className={styles.link}>
-              <Link href='/'>Home</Link>
+              <Link href='/'>홈</Link>
               <p>&gt;</p>
               <Link href='/about/schedule'>
-                <h4>Schedule</h4>
+                <h4>일정 안내</h4>
               </Link>
             </div>
           </div>

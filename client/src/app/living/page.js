@@ -27,14 +27,14 @@ export default function Review() {
               <h1>시설 안내</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/'>Home</Link>
+              <Link href='/'>홈</Link>
               <p>&gt;</p>
               <Link href='/living'>
-                <h4>Living</h4>
+                <h4>시설 안내</h4>
               </Link>
             </div>
           </div>
-        <div className={styles.pics}>
+          <div className={styles.pics}>
             <h1>시설 사진</h1>
             <div className={styles.button}>
               <button

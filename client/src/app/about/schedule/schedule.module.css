@@ -1,346 +1,332 @@
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap");
 
 .main {
-    font-family: "Noto Sans KR", sans-serif;
-    /* overflow: hidden; */
-    height: 100vh;
+  font-family: "Noto Sans KR", sans-serif;
+  /* overflow: hidden; */
+  height: 100vh;
 }
 
 .content {
-    margin-top: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
-    width: 80%;
-    max-width: 1200px;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
+  width: 80%;
+  max-width: 1200px;
+height: 80px;
+  display: flex;
+  flex-direction: row;
 }
 
 .title {
-    height: 100%;
-    width: 50%; /* Ensure it takes up half of the header */
-    font-family: 'Times New Roman', Times, serif;
-    color: #19428b;
-    margin: 0;
+  height: 100%;
+  width: 50%; /* Ensure it takes up half of the header */
+  color: #19428b;
+  margin: 0;
 }
 
 .title > h3 {
-    margin-top: -15px;
-    margin-left: 15px;
-    font-family: "Noto Sans KR", sans-serif;
+  margin-top: -15px;
+  margin-left: 15px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .link {
-    height: 100%;
-    width: 50%; /* Ensure it takes up half of the header */
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Align items to the right */
-    font-size: 18px; /* Adjust the font size as needed */
-    text-align: right;
+  height: 100%;
+  width: 50%; /* Ensure it takes up half of the header */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  font-size: 18px; /* Adjust the font size as needed */
+  text-align: right;
 }
 
 .link p {
-    margin: 0 10px; /* Add some space around the ">" symbol */
+  margin: 0 10px; /* Add some space around the ">" symbol */
 }
 
 .link a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .link a:hover {
-    color: #4e73ac; /* Change to desired hover color */
+  color: #4e73ac; /* Change to desired hover color */
 }
 
 .link h4 {
-    margin: 0;
-    transition: color 0.3s; /* Add transition for smooth color change */
+  margin: 0;
+  transition: color 0.3s; /* Add transition for smooth color change */
 }
 
 .link h4:hover {
-    color: #4e73ac; /* Change to desired hover color */
+  color: #4e73ac; /* Change to desired hover color */
 }
 
 .scheduler {
-    font-size: 16px;
-    margin-top: 60px;
-    width: 100%; /* Ensure it takes full width of the parent */
-    max-width: 1200px; /* Set max-width to prevent it from growing too large */
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    margin-bottom: 20px;
-    overflow: hidden; /* Prevent the image from overflowing outside the container */ 
-    position: relative; /* Necessary to control the positioning of children */
+  font-size: 16px;
+  margin-top: 60px;
+  width: 100%; /* Ensure it takes full width of the parent */
+  max-width: 1200px; /* Set max-width to prevent it from growing too large */
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 20px;
+  overflow: hidden; /* Prevent the image from overflowing outside the container */
+  position: relative; /* Necessary to control the positioning of children */
 }
 
 .scheduler img {
-    width: 100%; /* Make the image responsive and fit within the container */
-    max-width: 100%; /* Ensure the image doesn’t grow beyond the container */
-    height: auto; /* Maintain the aspect ratio of the image */
-    object-fit: contain; /* Ensure the image stays contained within the .scheduler */
+  width: 100%; /* Make the image responsive and fit within the container */
+  max-width: 100%; /* Ensure the image doesn’t grow beyond the container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  object-fit: contain; /* Ensure the image stays contained within the .scheduler */
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    gap: 3px;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
 }
 
 .blankBlock {
-    width: 180px;
-    height: 60px;
-
+  width: 180px;
+  height: 60px;
 }
 
 .dayBlock {
-    width: 180px;
-    height: 60px;
-    border: 1px solid black; /* Add border width and color */
-    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
-    background-color: #526caa;
-    padding-left: 18px;
-    font-weight: 400;
-    color: white;
+  width: 180px;
+  height: 60px;
+  border: 1px solid black; /* Add border width and color */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+  background-color: #526caa;
+  padding-left: 18px;
+  font-weight: 400;
+  color: white;
 }
 
 .dayBlock > p {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .timeBlock {
-    font-family: 'Times New Roman', Times, serif;
-    width: 180px;
-    height: 120px;
-    border: 1px solid black; /* Add border width and color */
-    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
-    background-color: #f2f2f2;
-    font-weight: 600;
-    padding-left: 18px;
-    color: #1f1f1f;
+  font-family: "Times New Roman", Times, serif;
+  width: 180px;
+  height: 120px;
+  border: 1px solid black; /* Add border width and color */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+  background-color: #f2f2f2;
+  font-weight: 600;
+  padding-left: 18px;
+  color: #1f1f1f;
 }
 
 .timeBlock > p {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .scheduleBlock {
-    width: 180px;
-    height: 120px;
-    border: 1px solid black; /* Add border width and color */
-    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+  width: 180px;
+  height: 120px;
+  border: 1px solid black; /* Add border width and color */
+  border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
 }
 
 .textBlockR1 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 10px;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 10px;
+  color: #1f1f1f;
 }
 
 .textBlockR2 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 6px;
-    border-left: 6px solid #4273b1;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 6px;
+  border-left: 6px solid #4273b1;
+  color: #1f1f1f;
 }
 
 .textBlockR2_2 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 10px;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 10px;
+  color: #1f1f1f;
 }
 
 .textBlockR3 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 10px;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 10px;
+  color: #1f1f1f;
 }
 .textBlockR4 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 10px;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 10px;
+  color: #1f1f1f;
 }
 .textBlockR5 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 6px;
-    border-left: 6px solid #ffff54;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 6px;
+  border-left: 6px solid #ffff54;
+  color: #1f1f1f;
 }
 .textBlockR5_2 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 6px;
-    border-left: 6px solid #4fad5b;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 6px;
+  border-left: 6px solid #4fad5b;
+  color: #1f1f1f;
 }
 .textBlockR6 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 10px;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 10px;
+  color: #1f1f1f;
 }
 .textBlockR7 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 6px;
-    border-left: 6px solid #4fad5b;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 6px;
+  border-left: 6px solid #4fad5b;
+  color: #1f1f1f;
 }
 .textBlockR7_2 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 10px;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 10px;
+  color: #1f1f1f;
 }
 .textBlockR8 {
-    margin-top: -3px;
-    width: 90%;
-    height: 40%;
-    margin-left: 5%;
-    padding-left: 10px;
-    color: #1f1f1f;
+  margin-top: -3px;
+  width: 90%;
+  height: 40%;
+  margin-left: 5%;
+  padding-left: 10px;
+  color: #1f1f1f;
 }
 
 .controls {
-    gap: 20px;
+  gap: 20px;
 }
 
 .controls button {
-    background-color: #e9e9ea;
-    color: #387cf6;
-    border: none;
-    width: auto;
-    margin-left: 5px;
-    border-radius: 10px;
-    padding: 4px 12px;
+  background-color: #e9e9ea;
+  color: #387cf6;
+  border: none;
+  width: auto;
+  margin-left: 5px;
+  border-radius: 10px;
+  padding: 4px 12px;
 }
 
 .bottom {
-    max-width: 1200px;
-    width: 80%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    color: #808080;
-    margin-bottom: 70px;
+  max-width: 1200px;
+  width: 80%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  color: #808080;
+  margin-bottom: 70px;
 }
 
-
 @media (max-width: 450px) {
-    .content {
-        margin-top: 120px;
-        height: auto;
-    }
+  .content {
+    margin-top: 120px;
+    height: auto;
+  }
 
-    .header {
-        flex-direction: column; /* Stack the link and title vertically */
-        align-items: flex-start; /* Align both link and title to the left */
-        width: 85%;
-        max-width: 1200px;
-        height: auto;
-        margin-bottom: 10px;
-    }
+  .header {
+    flex-direction: column; /* Stack the link and title vertically */
+    align-items: flex-start; /* Align both link and title to the left */
+    width: 85%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
-    .link {
-        order: -1; /* Move the link above the title */
-        width: 100%; /* Make the link take full width */
-        justify-content: flex-start; /* Align the link to the left */
-        margin-bottom: 0px; /* Add some space between link and title */
-    }
+  .link {
+    order: -1; /* Move the link above the title */
+    width: 100%; /* Make the link take full width */
+    justify-content: flex-start; /* Align the link to the left */
+    margin-bottom: 0px; /* Add some space between link and title */
+  }
 
-    .title {
-        width: 100%; /* Make the title take full width */
-        text-align: left; /* Align the title text to the left */
-        margin-top: -10px;
-        height: 70px;
-    }
+  .title {
+    width: 100%; /* Make the title take full width */
+    text-align: left; /* Align the title text to the left */
+    margin-top: -10px;
+    height: 70px;
+  }
 
-    /* same for this for all  */
+  /* same for this for all  */
 
-    .scheduler {
-        margin-top: 50px;
-        width: 90%;
-    }
+  .scheduler {
+    margin-top: 50px;
+    width: 90%;
+  }
 
-
-    .bottom {
-        width: 90%;
-        margin-bottom: 170px;
-        font-size: 12px;
-    }
-
-
+  .bottom {
+    width: 90%;
+    margin-bottom: 170px;
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 450px) and (max-width: 768px) {
-    .content {
-        margin-top: 110px;
-    }
-    .header,
-    .bottom {
-        width: 85%;
-    }
+  .content {
+    margin-top: 110px;
+  }
+  .header,
+  .bottom {
+    width: 85%;
+  }
 
-    .scheduler {
-        width: 85%;
-    }
-    
-    .bottom {
-        font-size: 14px;
-    }
-  
+  .scheduler {
+    width: 85%;
+  }
+
+  .bottom {
+    font-size: 14px;
+  }
 }
 
-
 @media (min-width: 768px) and (max-width: 1194px) {
-    .header,
-    .bottom {
-        width: 85%;
-    }
+  .header,
+  .bottom {
+    width: 85%;
+  }
 
-    .scheduler {
-        width: 85%;
-    }
-
-
-
-    
-
-
+  .scheduler {
+    width: 85%;
+  }
 }

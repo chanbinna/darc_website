@@ -1,31 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap");
 @font-face {
-  font-family: 'SF_HambakSnow';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+  font-family: "SF_HambakSnow";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
-@import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+@import url("//fonts.googleapis.com/earlyaccess/nanummyeongjo.css");
 
 @font-face {
-  font-family: 'MapoFlowerIsland';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+  font-family: "MapoFlowerIsland";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NEXON Lv2 Gothic';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+  font-family: "NEXON Lv2 Gothic";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -112,9 +116,9 @@
   height: 90%; /* Adjust the height based on your design */
   object-fit: cover; /* Ensure the image covers the container without distortion */
   position: absolute;
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   overflow: hidden;
-  animation: goUp 1s ease-out; 
+  animation: goUp 1s ease-out;
 }
 
 .pictureBox .firstText {
@@ -125,20 +129,20 @@
   align-items: center;
 }
 
-  .pictureBox h1 {
-    font-size: 20px;
-    margin-top: 95px;
-    font-weight: 500;
-  }
+.pictureBox h1 {
+  font-size: 20px;
+  margin-top: 95px;
+  font-weight: 500;
+}
 
-  .pictureBox p {
-    margin-top: 10px;
-    font-size: 15px;
-  }
+.pictureBox p {
+  margin-top: 10px;
+  font-size: 15px;
+}
 
 .cardSlot {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
   font-weight: 100;
   background-color: white;
   border-radius: 20px;
@@ -183,424 +187,428 @@
   position: relative;
 }
 
-  
-  /* Second section styles */
-  .second {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-image: url(/watermark.svg);
-    background-position: center center; /* Position the background image to show the bottom */
-    background-size: cover;
-    width: 90%;
-    height: 85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    gap: 20px;
-  }
+/* Second section styles */
+.second {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(/watermark.svg);
+  background-position: center center; /* Position the background image to show the bottom */
+  background-size: cover;
+  width: 90%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 20px;
+}
 
-  .circle {
-    padding-left: 30px;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); */
-    background-color: #e0ebf6; /* Background color of the circle */
-    opacity: 50%;
-    width: 80%; /* Width of the circle */
-    height: 80%; /* Height of the circle */
-    border-radius: 50%; /* Make it a circle */
-    position: absolute; /* Position it absolutely */
-    z-index: 0; /* Place the circle behind other elements */
-    top: 50%; /* Position the circle at the top (adjust as needed) */
-    left: 50%; /* Center the circle horizontally */
-    transform: translate(-50%, -50%); /* Adjust position for perfect centering */
-  }
+.circle {
+  padding-left: 30px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); */
+  background-color: #e0ebf6; /* Background color of the circle */
+  opacity: 50%;
+  width: 80%; /* Width of the circle */
+  height: 80%; /* Height of the circle */
+  border-radius: 50%; /* Make it a circle */
+  position: absolute; /* Position it absolutely */
+  z-index: 0; /* Place the circle behind other elements */
+  top: 50%; /* Position the circle at the top (adjust as needed) */
+  left: 50%; /* Center the circle horizontally */
+  transform: translate(-50%, -50%); /* Adjust position for perfect centering */
+}
 
-  .topBlocks {
-    position: relative; /* Set relative position for the blocks to allow the circle to be positioned behind */
+.topBlocks {
+  position: relative; /* Set relative position for the blocks to allow the circle to be positioned behind */
   z-index: 1;
-    width: 100%;
-    height: 47.5%;
-    display: flex;
-    justify-content: space-evenly; /* Ensure blocks are spaced evenly */
-    align-items: center; /* Vertically center blocks */
-    box-sizing: border-box; /* Include padding and border in width and height */
-  }
-  .Firstblocks {
-    width: 31%; /* Your block width */
-    height: 284px;
+  width: 100%;
+  height: 47.5%;
+  display: flex;
+  justify-content: space-evenly; /* Ensure blocks are spaced evenly */
+  align-items: center; /* Vertically center blocks */
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
+.Firstblocks {
+  width: 31%; /* Your block width */
+  height: 284px;
 
-    border-radius: 20px;
-    padding: 30px 30px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    position: relative; /* Ensure the circle is positioned inside */
-  }
+  border-radius: 20px;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative; /* Ensure the circle is positioned inside */
+}
 
-  .Firstblocks h1 {
-    margin-top: 100px;
-    font-weight: 600;
-    border-bottom: 0;
-    margin-bottom: 0px;
-  }
-  
-  .blocks {
-    width: 31%; /* Your block width */
-    height: 284px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    padding: 30px 30px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    position: relative; 
-  }
+.Firstblocks h1 {
+  margin-top: 100px;
+  font-weight: 600;
+  border-bottom: 0;
+  margin-bottom: 0px;
+}
 
-  .blocks h2 {
-    font-weight: 600;
-  }
+.blocks {
+  width: 31%; /* Your block width */
+  height: 284px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
 
-  .blocks p {
-    color: rgb(53, 53, 53);
-    line-height: 1.5;
-  }
-  
-  .iconCircle {
-    width: 60px; /* Adjust this size as needed */
-    height: 60px; /* Adjust this size as needed */
-    border-radius: 50%; /* Makes the div a circle */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.blocks h2 {
+  font-weight: 600;
+}
 
-  .iconCircle img {
-    width: 30px;
-    filter: brightness(1.5);
-  }
-  
-  .bottomBlocks {
-    position: relative; /* Set relative position for the blocks to allow the circle to be positioned behind */
+.blocks p {
+  color: rgb(53, 53, 53);
+  line-height: 1.5;
+  font-size: 16.5px;
+}
+
+.iconCircle {
+  width: 60px; /* Adjust this size as needed */
+  height: 60px; /* Adjust this size as needed */
+  border-radius: 50%; /* Makes the div a circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconCircle img {
+  width: 30px;
+  filter: brightness(1.5);
+}
+
+.bottomBlocks {
+  position: relative; /* Set relative position for the blocks to allow the circle to be positioned behind */
   z-index: 1;
-    width: 100%;
-    height: 47.5%;
-    display: flex;
-    justify-content: space-evenly; /* Ensure blocks are spaced evenly */
-    align-items: center; /* Vertically center blocks */
-    box-sizing: border-box; /* Include padding and border in width and height */
-  }
+  width: 100%;
+  height: 47.5%;
+  display: flex;
+  justify-content: space-evenly; /* Ensure blocks are spaced evenly */
+  align-items: center; /* Vertically center blocks */
+  box-sizing: border-box; /* Include padding and border in width and height */
+}
 
-  .linecontainer {
-    font-family: 'Pretendard-Regular';
-    color: #8e1f1f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 37%;
-    font-weight: 1000;
-    position: absolute; /* Position it relative to the parent */
-    top: 0; /* Move to the top */
-    left: 10; /* Move to the left */
-  }
-  
-  .line {
-    width: 30px;
-    flex-grow: 1;
-    border: none;
-    border-top: 2px solid #8e1f1f; /* Change the color and thickness here */
-    margin-right: 10px;
-  }
+.linecontainer {
+  font-family: "Pretendard-Regular";
+  color: #8e1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37%;
+  font-weight: 1000;
+  position: absolute; /* Position it relative to the parent */
+  top: 0; /* Move to the top */
+  left: 10; /* Move to the left */
+}
 
-  .linetext {
-    color: #8e1f1f;
-    font-weight: 500;
-    font-size: 18px;
-  }
+.line {
+  width: 30px;
+  flex-grow: 1;
+  border: none;
+  border-top: 2px solid #8e1f1f; /* Change the color and thickness here */
+  margin-right: 10px;
+}
 
-  .textinCard {
-    display: flex;
-    flex-direction: column;
-  }
+.linetext {
+  color: #8e1f1f;
+  font-weight: 500;
+  font-size: 18px;
+}
 
-  .textinCard h2 {
-    margin-top: 10px;
-  }
+.textinCard {
+  display: flex;
+  flex-direction: column;
+}
 
-  .textinCard p {
-    margin-top: 0;
-  }
+.textinCard h2 {
+  margin-top: 10px;
+}
 
-  .textinCard img {
-    margin-top: 50px;
-    width: 100px;
-    margin-bottom: 20px;
-  }
+.textinCard p {
+  margin-top: 0;
+}
 
-  .wholeWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+.textinCard img {
+  margin-top: 50px;
+  width: 100px;
+  margin-bottom: 20px;
+}
 
-  .videoSlot {
-    background-image: url(/videoBackground2.png);
-    background-position: center bottom 30%;
-    margin-bottom: 30px;
-    width: 95%;
-    border-radius: 20px;
-    background-size: cover;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; /* Space between video and text */
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  .videoWrapper {
-    position: relative;
-    width: 600px;
-    height: 337.5px;
-    overflow: hidden;
-    border-radius: 20px; /* Apply border-radius */
-    margin-left: 5%;
-  }
-  
-  .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+.wholeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  .videoTextBox {
-    /* font-family: 'Pretendard-Regular'; */
-    color: black;
-    width: 35%; /* Set videoTextBox to take up 40% of the width */
-    display: flex;
-    flex-direction: column;
-    text-align: right; /* Align the text to the right */
-    margin-right: 15%;
-  }
+.videoSlot {
+  background-image: url(/videoBackground2.png);
+  background-position: center bottom 30%;
+  margin-bottom: 30px;
+  width: 95%;
+  border-radius: 20px;
+  background-size: cover;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Space between video and text */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
-  .videoTextBox h2 {
-    margin-bottom: 0px;
-    /* font-weight: 800; */
-  }
+.videoWrapper {
+  position: relative;
+  width: 600px;
+  height: 337.5px;
+  overflow: hidden;
+  border-radius: 20px; /* Apply border-radius */
+  margin-left: 5%;
+}
 
-  .buttonWraper2 {
-    display: flex;
-    justify-content: right;
-  }
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
-  .noLinkStyle {
-    text-decoration: none; /* Removes the underline */
-    color: inherit; /* Inherit the color of the parent element */
-  }
-  
-  .Specificbutton {
-    width: 130px; /* Customize width */
-    height: 40px; /* Customize height */
-    background-color: rgb(30, 30, 30);
-    border: none;
-    color: white;
-    border-radius: 20px;
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    align-self: flex-end; /* Align the button to the right */
-    font-size: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
-  }
+.videoTextBox {
+  /* font-family: 'Pretendard-Regular'; */
+  color: black;
+  width: 35%; /* Set videoTextBox to take up 40% of the width */
+  display: flex;
+  flex-direction: column;
+  text-align: right; /* Align the text to the right */
+  margin-right: 15%;
+}
 
+.videoTextBox h2 {
+  margin-bottom: 0px;
+  /* font-weight: 800; */
+}
 
-  
-  .Specificbutton:hover {
-    background-color: rgb(49, 49, 49); /* Example hover background */
-  }
+.buttonWraper2 {
+  display: flex;
+  justify-content: right;
+}
 
+.noLinkStyle {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherit the color of the parent element */
+}
 
-  .housing {
-    position: relative; /* Ensure the child elements are positioned relative to this container */
-    width: 100%;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .housing img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the image covers the area properly */
-    z-index: 1; /* Ensure the image is behind the text */
-  }
-  
-  .housingTextBox {
-    position: absolute; /* Layer the text on top of the image */
-    top: 40%; /* Center vertically */
-    left: 15%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust the position to the true center */
-    z-index: 2; /* Ensure text is above the image */
-    color: black; /* Change text color to contrast with the image */
-  }
+.Specificbutton {
+  width: 130px; /* Customize width */
+  height: 40px; /* Customize height */
+  background-color: rgb(30, 30, 30);
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: flex-end; /* Align the button to the right */
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.45);
+}
 
+.Specificbutton:hover {
+  background-color: rgb(49, 49, 49); /* Example hover background */
+}
 
-  .testimony {
-    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.1) 30%, transparent 60%), 
-              linear-gradient(135deg, #e3e3df 0%, #a8a8a7 100%);
-    position: relative; /* Ensure the child elements are positioned relative to this container */
-    width: 100%;
-    min-height: 440px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-  }
+.housing {
+  position: relative; /* Ensure the child elements are positioned relative to this container */
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
 
-  .testimonyText {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: #808080;
-  }
-   
-  .testimonyText h3 {
-    font-size: 27px;
-    margin-bottom: 10px;
-  }
+.housing img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the area properly */
+  z-index: 1; /* Ensure the image is behind the text */
+}
 
-  .testimonyText p {
-    margin-top: 0px;
-  }
+.housingTextBox {
+  position: absolute; /* Layer the text on top of the image */
+  top: 40%; /* Center vertically */
+  left: 15%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to the true center */
+  z-index: 2; /* Ensure text is above the image */
+  color: black; /* Change text color to contrast with the image */
+}
 
-  .testimonyText2 {
-    margin-top: -42px;
-    margin-bottom: 0px;
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    color: #b89230;
-  }
-  
-  .star {
-    width: 100px;
-  }
+.testimony {
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.1) 30%,
+      transparent 60%
+    ),
+    linear-gradient(135deg, #e3e3df 0%, #a8a8a7 100%);
+  position: relative; /* Ensure the child elements are positioned relative to this container */
+  width: 100%;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
 
-  .cardWrapper {
-    width: auto;
-    max-width: 90%;
-  }
+.testimonyText {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #808080;
+}
 
-  .testcardWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-  }
+.testimonyText h3 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
 
-  .testCard {
-    padding: 20px;
-    margin-top: -10px;
-    width: 430px;
-    height: 220px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    padding-bottom: 10px;
-  }
+.testimonyText p {
+  margin-top: 0px;
+}
 
-  .userCard {
-    margin-top: 10px;
-    
-  }
+.testimonyText2 {
+  margin-top: -42px;
+  margin-bottom: 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #b89230;
+}
 
-  .user {
-    width: 40px;
-    height: 40px;
-  }
+.star {
+  width: 100px;
+}
 
-  .userCard {
-    display: flex;
-    flex-direction: row;
-  }
+.cardWrapper {
+  width: auto;
+  max-width: 90%;
+}
 
-  .name {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-  }
+.testcardWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 
-  .name p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 15px;
-  }
+.testCard {
+  padding: 20px;
+  margin-top: -10px;
+  width: 430px;
+  height: 220px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  padding-bottom: 10px;
+}
 
-  .name label {
-    color: gray;
-    font-style: italic;
-    font-size: 14px;
-  }
+.userCard {
+  margin-top: 10px;
+}
 
-  .testText {
-    margin-top: -5px;
-    color: #393939;
-    line-height: 1.45; 
-    text-align: left;
-    max-height: 140px; /* Adjust max-height to fit the desired number of lines */
-    overflow: hidden; /* Hide any text that overflows */
-    text-overflow: ellipsis; /* Show ellipsis when text overflows */
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* Show up to 14 lines of text */
-    -webkit-box-orient: vertical;
-    line-clamp: 4;
-  }
+.user {
+  width: 40px;
+  height: 40px;
+}
 
-  .hospital {
-    background-color: #fafafa;
-    position: relative; /* Ensure the child elements are positioned relative to this container */
-    width: 100%;
-    min-height: 170px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+.userCard {
+  display: flex;
+  flex-direction: row;
+}
 
-  .buttonWraper {
-    margin-top: 20px;
-    display: flex;
-    justify-content: right;
-  }
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
 
-  .buttonWraper button {
-    font-size: 15px;
-    cursor: pointer;
-    height: 40px;
-    width: 150px;
-    background-color: white;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-  }
-  
-  .buttonWraper button:hover {
-    background-color: #f0f0f0; /* Slightly darker background on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
-    transform: scale(1.05); /* Slightly increase size on hover */
-  }
+.name p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+}
 
-  .noDecoration {
-    text-decoration: none; /* Removes any link underline */
-    color: inherit; /* Ensures that link inherits the color of the surrounding text */
+.name label {
+  color: gray;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.testText {
+  margin-top: -5px;
+  color: #393939;
+  line-height: 1.45;
+  text-align: left;
+  max-height: 140px; /* Adjust max-height to fit the desired number of lines */
+  overflow: hidden; /* Hide any text that overflows */
+  text-overflow: ellipsis; /* Show ellipsis when text overflows */
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Show up to 14 lines of text */
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+}
+
+.hospital {
+  background-color: #fafafa;
+  position: relative; /* Ensure the child elements are positioned relative to this container */
+  width: 100%;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonWraper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: right;
+}
+
+.buttonWraper button {
+  font-size: 15px;
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.buttonWraper button:hover {
+  background-color: #f0f0f0; /* Slightly darker background on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.noDecoration {
+  text-decoration: none; /* Removes any link underline */
+  color: inherit; /* Ensures that link inherits the color of the surrounding text */
 }
 
 @media (max-width: 450px) {
@@ -617,13 +625,12 @@
     margin-top: 35%;
     font-weight: 500;
   }
-  
+
   .pictureBox p {
     margin-top: 10px;
     font-size: 14px;
   }
 
-  
   .topBlocks,
   .bottomBlocks {
     display: flex;
@@ -636,10 +643,10 @@
   .topBlocks {
     margin-bottom: 0;
   }
- 
+
   .second {
     width: 95%;
-    background-size: cover; 
+    background-size: cover;
     margin-top: 0px;
     margin-bottom: 10px;
   }
@@ -653,7 +660,6 @@
     font-weight: 600;
     border-bottom: 0;
     margin-bottom: 0px;
-    
   }
 
   .Firstblocks p {
@@ -685,7 +691,7 @@
     border-radius: 20px; /* Apply border-radius */
     margin-left: 0;
   }
-  
+
   .videoWrapper iframe {
     position: absolute;
     top: 0;
@@ -707,7 +713,6 @@
     align-items: center;
   }
 
-  
   .testCard {
     width: 99%;
   }
@@ -716,21 +721,12 @@
     margin-top: -10px;
   }
 
-
   .buttonWraper {
     margin-bottom: 20px;
   }
-
-
-
-
-
-
 }
 
-
 @media (min-width: 450px) and (max-width: 768px) {
-
   .firstScreen {
     margin-top: 100px;
     height: calc(100vh - 190px); /* Full height of the viewport */
@@ -758,10 +754,10 @@
   .topBlocks {
     margin-bottom: 0;
   }
- 
+
   .second {
     width: 95%;
-    background-size: cover; 
+    background-size: cover;
     margin-top: 0px;
     margin-bottom: 10px;
   }
@@ -775,7 +771,6 @@
     font-weight: 600;
     border-bottom: 0;
     margin-bottom: 0px;
-    
   }
 
   .Firstblocks p {
@@ -807,7 +802,7 @@
     border-radius: 20px; /* Apply border-radius */
     margin-left: 0;
   }
-  
+
   .videoWrapper iframe {
     position: absolute;
     top: 0;
@@ -822,13 +817,9 @@
     align-items: center;
     margin-top: 20px;
   }
-
 }
 
-
 @media (min-width: 768px) and (max-width: 1194px) {
-
-
   .pictureBox {
     height: 91%;
   }
@@ -854,8 +845,4 @@
   .videoTextBox {
     margin-right: 6%;
   }
-
-
-
-
 }

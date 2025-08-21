@@ -33,7 +33,7 @@ export default function Announcement() {
               <h1>공지사항</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/contact/resources'>Contact</Link>
+              <Link href='/contact/resources'>고객센터</Link>
               <p>&gt;</p>
               <Link href='/contact/announcement'>
                 <h4>공지사항</h4>

@@ -29,7 +29,7 @@ export default function Medicine2() {
               <h1>치료 약물</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/addictions'>Addictions</Link>
+              <Link href='/addictions'>중독</Link>
               <p>&gt;</p>
               <Link href='/addictions/medicine/2'>
                 <h4>진정, 마취제</h4>

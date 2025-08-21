@@ -117,9 +117,9 @@ export default function Review() {
               <h1>추천서</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/'>Home</Link>
+              <Link href='/'>홈</Link>
               <p>&gt;</p>
-              <Link href='/review'>회복 수기</Link>
+              <Link href='/review'>다르크 이야기</Link>
               <p>&gt;</p>
               <Link href='/review/recommend'>
                 <h4>추천서</h4>

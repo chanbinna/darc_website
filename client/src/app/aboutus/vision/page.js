@@ -26,13 +26,13 @@ export default function Vision() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>Vision</h1>
+              <h1>비전</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/aboutus/vision'>About us</Link>
+              <Link href='/aboutus/vision'>재단 소개</Link>
               <p>&gt;</p>
               <Link href='/aboutus/vision'>
-                <h4>vision</h4>
+                <h4>비전</h4>
               </Link>
             </div>
           </div>

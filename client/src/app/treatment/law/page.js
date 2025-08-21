@@ -28,7 +28,7 @@ export default function Program1() {
               <h1>사법지원</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/treatment'>Treatment</Link>
+              <Link href='/treatment'>재활/프로그램</Link>
               <p>&gt;</p>
               <Link href='/treatment/law'>
                 <h4>사법지원</h4>

@@ -1,85 +1,456 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
-
 .nav {
-    overflow: hidden;
-    position: fixed; /* Make the navigation bar fixed */
-    width: 100%;
-    top: 0; /* Position it at the top */
-    left: 0; /* Ensure it spans the entire width */
-    margin: 0; /* Ensure no margin */
-    padding: 0; /* Ensure no padding */
-    height: 130px; /* Adjust height to accommodate only the nav elements */
-    z-index: 1000; /* Ensure it appears above other content */
-    display: flex;
-    flex-direction: column; /* Align children vertically */
-    /* border-bottom: 2px solid #19428b;  */
-    /* border-bottom: 1px solid #e3e3e4;  */
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 8px -8px;
-    transition: box-shadow 300ms ease-in-out;
-    background-color: #fafafa; /* Set background color */
-    transition: height 0.3s;
-    font-family: "Inter", sans-serif;
+  overflow: hidden;
+  position: fixed; /* Make the navigation bar fixed */
+  width: 100%;
+  top: 0; /* Position it at the top */
+  left: 0; /* Ensure it spans the entire width */
+  margin: 0; /* Ensure no margin */
+  padding: 0; /* Ensure no padding */
+  height: 130px; /* Adjust height to accommodate only the nav elements */
+  z-index: 1000; /* Ensure it appears above other content */
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  /* border-bottom: 2px solid #19428b;  */
+  /* border-bottom: 1px solid #e3e3e4;  */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 8px -8px;
+  transition: box-shadow 300ms ease-in-out;
+  background-color: #fafafa; /* Set background color */
+  transition: height 0.3s;
+  font-family: "Inter", sans-serif;
 }
 
 .nav.scrolled {
-    height: 55px; 
+  height: 55px;
 }
 
 .top {
-    background-color: #fafafa;
-    height: 100px; /* Adjust height to accommodate only the top part */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    position: relative;
-    margin-bottom: 20px;
-    transition: opacity 0.3s, height 0.3s;
+  background-color: #fafafa;
+  height: 100px; /* Adjust height to accommodate only the top part */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  position: relative;
+  margin-bottom: 20px;
+  transition:
+    opacity 0.3s,
+    height 0.3s;
 }
 
 .nav.scrolled .top {
-    opacity: 0;
-    height: 0; 
-    overflow: hidden; 
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .logo {
-    /* background-color: rebeccapurple; */
-    top: -18px;
-    width: 400px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
+  /* background-color: rebeccapurple; */
+  top: -18px;
+  width: 400px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 
 .logo img {
-    max-width: 90%;
-    max-height: 100%;
+  max-width: 90%;
+  max-height: 100%;
 }
 
 .lineb {
-    color: #dbdbbe;
+  color: #dbdbbe;
 }
 
 .link {
+  height: 30px;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  padding: 0 20px; /* Add padding to the sides */
+  gap: 0px; /* Add some gap between elements */
+  position: absolute; /* Position the link container absolutely */
+  top: 10px; /* Adjust as needed */
+  right: 7%; /* Adjust as needed */
+  font-size: 14px;
+  color: #555555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link a,
+.link p {
+  margin: 0 5px; /* Add some space between the links */
+  line-height: 20px; /* Ensure vertical alignment */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+.search {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  border: 1px solid black; /* Set the border for the entire div */
+  border-radius: 4px; /* Optional: Rounded corners */
+  overflow: hidden; /* Ensure content does not overflow the div */
+  width: 170px;
+  height: 35px;
+}
+
+.search input {
+  flex: 1; /* Make the input take up remaining space */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  padding: 8px; /* Add some padding */
+  background: none;
+  font-size: 15px;
+  font-weight: 300;
+  width: 90px;
+}
+
+.search button {
+  border: none; /* Remove border */
+  background: none; /* Remove background */
+  outline: none; /* Remove outline */
+  padding: 10px; /* Add some padding */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.search button:hover {
+  color: gray;
+}
+
+.bottom {
+  margin: 0;
+  height: 60px; /* Adjust height to accommodate only the bottom part */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  font-size: 18px;
+  background-color: #fafafa;
+  transition: height 0.3s;
+}
+
+.bottom ul {
+  list-style: none; /* Remove list bullets */
+  display: flex; /* Lay out list items in a row */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  margin-bottom: 3px;
+}
+
+.nav.scrolled .bottom ul {
+  margin-bottom: 40px;
+}
+
+.bottom li {
+  position: relative; /* For positioning dropdown */
+}
+
+.bottom span {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Text color */
+  padding: 15px 20px; /* Add padding to the links */
+  transition:
+    background-color 0.3s,
+    color 0.3s; /* Smooth transition */
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: -20px;
+  /* font-family: "Archivo", sans-serif; */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.bottom span:hover {
+  background-color: #19428b; /* Change background color on hover */
+  color: #f3f3f5; /* Change text color on hover */
+}
+
+.dropdown {
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 129px; /* Position it below the nav bar */
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background-color: #19428b;
+  z-index: 999; /* Ensure it appears above other content */
+  color: #f3f3f5;
+  text-align: center;
+  padding-top: 20px; /* Adjust for content alignment */
+  transition: top 0.3s;
+}
+
+.nav.scrolled .dropdown {
+  top: 55px;
+}
+
+.dropdown a {
+  border-bottom: 2px solid #244186;
+  display: inline-block; /* Allow the border to match text length */
+  background-color: inherit; /* Inherit background color */
+  color: inherit; /* Inherit text color */
+  padding: 0; /* Remove padding */
+  transition: none; /* Remove transition */
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.dropdown a:hover {
+  background-color: transparent; /* No background color change */
+  color: inherit; /* No text color change */
+  border-bottom: 2px solid #f3f3f5;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.linkbox {
+  margin-left: 25%;
+  width: 60%;
+  height: 220px;
+  gap: 96px;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Space between columns */
+  gap: 10px;
+}
+
+.column h4 {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-weight: 400;
+}
+
+.column a {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  /* min-width: 70px; 
+    display: inline-block; */
+}
+
+/* Keep the dropdown visible and link highlighted until mouse leaves the dropdown area */
+.bottom li:hover .dropdown,
+.bottom li:focus-within .dropdown {
+  display: block;
+}
+
+/* Maintain highlight on the bottom link */
+.bottom li:hover > span,
+.bottom li:focus-within > span,
+.bottom li:hover .dropdown,
+.bottom li:focus-within .dropdown {
+  background-color: #19428b;
+  color: #f3f3f5; /* Text color */
+}
+
+.special1 {
+  width: 70px;
+}
+
+.special2 {
+  width: 60px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.fullscreenMenu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    width: 100%;
+    height: 100px;
+    font-family: "Pretendard-Regular";
+  }
+
+  .link {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    cursor: pointer;
+    z-index: 998;
+  }
+
+  .bottom {
+    height: 0px;
+  }
+
+  .bottom ul {
+    display: none;
+  }
+
+  .nav.scrolled {
+    height: 100px;
+  }
+
+  .nav.scrolled .top {
+    opacity: 1; /* Ensure the top section stays visible */
+    height: 100px;
+  }
+
+  .nav.scrolled .dropdown {
+    top: 0px;
+  }
+
+  .fullscreenMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+    z-index: 999;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns the content to the top */
+    padding-top: 60px; /* Adds padding to ensure it's right below the hamburger */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .fullscreenMenu.open {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .fullscreenMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    margin-left: 10%;
+    font-family: "Pretendard-Regular";
+  }
+
+  .fullscreenMenu li {
+    margin: 20px 0px;
+  }
+
+  .fullscreenMenu a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .Firstbuttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns buttons to the top */
+    width: 100%; /* Ensures the container takes the full width */
+    padding: 0; /* Removes any padding */
+    margin-top: 0px; /* Adjust the margin as needed to fine-tune positioning */
+    box-sizing: border-box; /* Ensures padding and borders are included in width */
+  }
+
+  .menuButton {
+    background-color: inherit; /* Dark background */
+    color: black; /* White text */
+    border: none;
+    padding: 13px 10px;
+    font-size: 18px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%; /* Ensures the button takes full width */
+    text-align: left;
+    box-sizing: border-box; /* Ensures padding and borders are included in width */
+    font-size: 22px;
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  .menuButton:hover {
+    background-color: #ececec; /* Lighter background on hover */
+  }
+
+  .nextSign {
+    position: absolute;
+    right: 20px;
+    color: #6b6b6b;
+    font-size: 18px;
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 20px; /* 20px from the top */
+    right: 20px; /* 30px from the right */
+    color: #6b6b6b;
+    font-size: 30px; /* Adjust font size as needed */
+    cursor: pointer; /* Makes the close button clickable */
+    z-index: 1000; /* Ensures it stays above other content */
+  }
+
+  .backButton {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-size: 20px;
+    color: #6b6b6b;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .subMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height for sub-menu */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1194px) {
+  .lineb {
+    color: #dbdbbe;
+  }
+
+  .link {
     height: 30px;
     display: flex;
     align-items: center; /* Center content vertically */
@@ -88,143 +459,23 @@
     gap: 0px; /* Add some gap between elements */
     position: absolute; /* Position the link container absolutely */
     top: 10px; /* Adjust as needed */
-    right: 7%; /* Adjust as needed */
+    right: 2%; /* Adjust as needed */
     font-size: 14px;
     color: #555555;
     font-family: Arial, Helvetica, sans-serif;
-}
+  }
 
-.link a, .link p {
+  .link a,
+  .link p {
     margin: 0 5px; /* Add some space between the links */
     line-height: 20px; /* Ensure vertical alignment */
     text-decoration: none; /* Remove underline from links */
     color: inherit; /* Inherit color from parent */
-}
+  }
 
-.link a:hover {
-    text-decoration: underline;
-}
-
-.search {
-    display: flex;
-    margin-left: 10px;
-    align-items: center;
-    border: 1px solid black; /* Set the border for the entire div */
-    border-radius: 4px; /* Optional: Rounded corners */
-    overflow: hidden; /* Ensure content does not overflow the div */
-    width: 170px;
-    height: 35px;
-}
-
-.search input {
-    flex: 1; /* Make the input take up remaining space */
-    border: none; /* Remove border */
-    outline: none; /* Remove outline */
-    padding: 8px; /* Add some padding */
-    background: none;
-    font-size: 15px;
-    font-weight: 300;
-    width: 90px;
-}
-
-.search button {
-    border: none; /* Remove border */
-    background: none; /* Remove background */
-    outline: none; /* Remove outline */
-    padding: 10px; /* Add some padding */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-.search button:hover {
-    color: gray;
-}
-
-.bottom {
-    margin: 0;
-    height: 60px; /* Adjust height to accommodate only the bottom part */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    font-size: 18px;
-    background-color: #fafafa;
-    transition: height 0.3s
-}
-
-.bottom ul {
-    list-style: none; /* Remove list bullets */
-    display: flex; /* Lay out list items in a row */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    margin-bottom: 3px;
-}
-
-.nav.scrolled .bottom ul {
-    margin-bottom: 40px; 
-}
-
-.bottom li {
-    position: relative; /* For positioning dropdown */
-}
-
-.bottom span {
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Text color */
-    padding: 15px 20px; /* Add padding to the links */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-    font-weight: 300;
-    font-size: 17px;
-    margin-top: -20px;
-    /* font-family: "Archivo", sans-serif; */
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-.bottom span:hover {
-    background-color: #19428b; /* Change background color on hover */
-    color: #f3f3f5; /* Change text color on hover */
-}
-
-.dropdown {
-    display: none; /* Hide by default */
-    position: fixed;
-    top: 129px; /* Position it below the nav bar */
-    left: 0;
-    width: 100%;
-    height: 220px;
-    background-color: #19428b; 
-    z-index: 999; /* Ensure it appears above other content */
-    color: #f3f3f5;
-    text-align: center;
-    padding-top: 20px; /* Adjust for content alignment */
-    transition: top 0.3s;
-}
-
-.nav.scrolled .dropdown {
-    top: 55px;
-}
-
-.dropdown a {
-    border-bottom: 2px solid #244186;
-    display: inline-block; /* Allow the border to match text length */
-    background-color: inherit; /* Inherit background color */
-    color: inherit; /* Inherit text color */
-    padding: 0; /* Remove padding */
-    transition: none; /* Remove transition */
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-.dropdown a:hover {
-    background-color: transparent; /* No background color change */
-    color: inherit; /* No text color change */
-    border-bottom: 2px solid #f3f3f5;
-    font-weight: 600;
-    letter-spacing: 0;
-}
-
-.linkbox {
+  .linkbox {
     margin-left: 25%;
-    width: 60%;
+    width: 80%;
     height: 220px;
     gap: 96px;
     display: flex;
@@ -232,257 +483,5 @@
     position: fixed;
     left: 30%;
     transform: translateX(-50%);
+  }
 }
-
-.column {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px; /* Space between columns */
-    gap: 10px;
-}
-
-.column h4 {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    font-weight: 500;
-}
-
-.column a {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    /* min-width: 70px; 
-    display: inline-block; */
-}
-
-/* Keep the dropdown visible and link highlighted until mouse leaves the dropdown area */
-.bottom li:hover .dropdown,
-.bottom li:focus-within .dropdown {
-    display: block;
-}
-
-/* Maintain highlight on the bottom link */
-.bottom li:hover > span,
-.bottom li:focus-within > span,
-.bottom li:hover .dropdown,
-.bottom li:focus-within .dropdown {
-    background-color: #19428b; 
-    color: #f3f3f5; /* Text color */
-}
-
-.special1 {
-    width: 70px;
-}
-
-.special2 {
-    width: 60px;
-}
-
-
-.hamburger {
-    display: none;
-}
-
-.fullscreenMenu {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .nav {
-        width: 100%;
-        height: 100px;
-        font-family: 'Pretendard-Regular';
-    }
-
-    .link {
-        display: none;
-    }
-
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        left: 15px;
-        top: 40px;
-        cursor: pointer;
-        z-index: 998;
-    }
-
-    .bottom {
-        height: 0px;
-    }
-
-    .bottom ul {
-        display: none;
-    }
-
-    .nav.scrolled {
-        height: 100px; 
-    }
-    
-
-    .nav.scrolled .top {
-        opacity: 1; /* Ensure the top section stays visible */
-        height: 100px;
-    }
-
-    .nav.scrolled .dropdown {
-        top: 0px;
-    }
-
-    .fullscreenMenu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(240, 240, 240);
-        z-index: 999;
-        flex-direction: column;
-        justify-content: flex-start; /* Aligns the content to the top */
-        padding-top: 60px; /* Adds padding to ensure it's right below the hamburger */
-        transition: opacity 0.3s ease-in-out;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .fullscreenMenu.open {
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .fullscreenMenu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: left;
-        margin-left: 10%;
-        font-family: 'Pretendard-Regular';
-    }
-
-    .fullscreenMenu li {
-        margin: 20px 0px;
-    }
-
-    .fullscreenMenu a {
-        color: black;
-        font-size: 20px;
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-
-
-    .Firstbuttons {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; /* Aligns buttons to the top */
-        width: 100%; /* Ensures the container takes the full width */
-        padding: 0; /* Removes any padding */
-        margin-top: 0px; /* Adjust the margin as needed to fine-tune positioning */
-        box-sizing: border-box; /* Ensures padding and borders are included in width */
-    }
-    
-    .menuButton {
-        background-color: inherit; /* Dark background */
-        color: black; /* White text */
-        border: none;
-        padding: 13px 10px;
-        font-size: 18px;
-        margin: 5px 0;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        width: 90%; /* Ensures the button takes full width */
-        text-align: left;
-        box-sizing: border-box; /* Ensures padding and borders are included in width */
-        font-size: 22px;
-        margin-left: 5%;
-        position: relative;
-        display: flex;
-        align-items: center;
-        border-radius: 10px;
-    }
-    
-    .menuButton:hover {
-        background-color: #ececec; /* Lighter background on hover */
-    }
-
-
-    .nextSign {
-        position: absolute;
-        right: 20px;
-        color: #6b6b6b;
-        font-size: 18px;
-    }
-
-    .closeButton {
-        position: absolute;
-        top: 20px; /* 20px from the top */
-        right: 20px; /* 30px from the right */
-        color: #6b6b6b;
-        font-size: 30px; /* Adjust font size as needed */
-        cursor: pointer; /* Makes the close button clickable */
-        z-index: 1000; /* Ensures it stays above other content */
-    }
-    
-    .backButton {
-        position: absolute;
-        top: 25px;
-        left: 10px;
-        font-size: 20px;
-        color: #6b6b6b;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-    
-    .subMenu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%; /* Full height for sub-menu */
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1194px) {
-    .lineb {
-        color: #dbdbbe;
-    }
-    
-    .link {
-        height: 30px;
-        display: flex;
-        align-items: center; /* Center content vertically */
-        justify-content: space-between; /* Distribute space evenly */
-        padding: 0 20px; /* Add padding to the sides */
-        gap: 0px; /* Add some gap between elements */
-        position: absolute; /* Position the link container absolutely */
-        top: 10px; /* Adjust as needed */
-        right: 2%; /* Adjust as needed */
-        font-size: 14px;
-        color: #555555;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    .link a, .link p {
-        margin: 0 5px; /* Add some space between the links */
-        line-height: 20px; /* Ensure vertical alignment */
-        text-decoration: none; /* Remove underline from links */
-        color: inherit; /* Inherit color from parent */
-    }
-
-    .linkbox {
-        margin-left: 25%;
-        width: 80%;
-        height: 220px;
-        gap: 96px;
-        display: flex;
-        flex-direction: row;
-        position: fixed;
-        left: 30%;
-        transform: translateX(-50%);
-    }
-
-}
-

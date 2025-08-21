@@ -132,13 +132,13 @@ export default function Review() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>회복자들의 경험담</h1>
+              <h1>다르크 이야기</h1>
             </div>
             <div className={styles.link}>
-              <Link href='/'>Home</Link>
+              <Link href='/'>홈</Link>
               <p>&gt;</p>
               <Link href='/review'>
-                <h4>Our Story</h4>
+                <h4>다르크 이야기</h4>
               </Link>
             </div>
           </div>
