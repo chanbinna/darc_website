@@ -39,7 +39,7 @@ export default function NoticeDetailPage() {
                 <div className={styles.content}>
                     <div className={styles.header}>
                         <div className={styles.title}>
-                            <h1>자료실.</h1>
+                            <h1>자료실</h1>
                         </div>
                         <div className={styles.link}>
                             <Link href="/contact/resources">Contact</Link>

@@ -272,10 +272,10 @@ export default function Navigation({ activeIndex }) {
                   <Link href='/aboutus/his/korea'>역사</Link>
                 </li>
                 <li>
-                  <Link href='/aboutus/his/korea'>Korea</Link>
+                  <Link href='/aboutus/his/korea'>한국</Link>
                 </li>
                 <li>
-                  <Link href='/aboutus/his/japan'>Japan</Link>
+                  <Link href='/aboutus/his/japan'>일본</Link>
                 </li>
                 <li>
                   <Link href='/aboutus/chart'>조직도</Link>
@@ -429,9 +429,9 @@ export default function Navigation({ activeIndex }) {
                   <Link href='/aboutus/his/korea'>
                     <h4>역사</h4>
                   </Link>
-                  <Link href='/aboutus/his/korea'>Korea</Link>
+                  <Link href='/aboutus/his/korea'>한국</Link>
                   <Link href='/aboutus/his/japan' className={styles.special2}>
-                    Japan
+                    일본
                   </Link>
                 </div>
                 <div className={styles.column}>

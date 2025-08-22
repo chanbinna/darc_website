@@ -44,11 +44,11 @@ export default function Korea() {
           </div>
           <div className={styles.anotherLink}>
             <Link href='/aboutus/his/korea' className={styles.rightnow}>
-              <p>Korea</p>
+              <p>한국</p>
             </Link>
             <p>|</p>
             <Link href='/aboutus/his/japan' className={styles.other}>
-              <p>Japan</p>
+              <p>일본</p>
             </Link>
           </div>
           <div className={styles.onemoreLink}>

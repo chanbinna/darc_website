@@ -45,7 +45,7 @@ export default function NoticeDetailPage() {
               <Link href="/contact/resources">Contact</Link>
               <p>&gt;</p>
               <Link href="/contact/announcement">
-                <h4>공지사항.</h4>
+                <h4>공지사항</h4>
               </Link>
             </div>
           </div>
