@@ -113,7 +113,7 @@ export default function Navigation({ activeIndex }) {
                 className={styles.menuButton}
                 onClick={() => setMenuPage(7)}
               >
-                Home
+                홈
                 <span className={styles.nextSign}>
                   <GrNext />
                 </span>
@@ -124,7 +124,7 @@ export default function Navigation({ activeIndex }) {
                 className={styles.menuButton}
                 onClick={() => setMenuPage(2)}
               >
-                Addictions
+                중독
                 <span className={styles.nextSign}>
                   <GrNext />
                 </span>
@@ -135,7 +135,7 @@ export default function Navigation({ activeIndex }) {
                 className={styles.menuButton}
                 onClick={() => setMenuPage(3)}
               >
-                Treatment
+                재활/프로그램
                 <span className={styles.nextSign}>
                   <GrNext />
                 </span>
@@ -146,7 +146,7 @@ export default function Navigation({ activeIndex }) {
                 className={styles.menuButton}
                 onClick={() => setMenuPage(4)}
               >
-                Donations
+                후원
                 <span className={styles.nextSign}>
                   <GrNext />
                 </span>
@@ -157,7 +157,7 @@ export default function Navigation({ activeIndex }) {
                 className={styles.menuButton}
                 onClick={() => setMenuPage(5)}
               >
-                About Us
+                재단 소개
                 <span className={styles.nextSign}>
                   <GrNext />
                 </span>
@@ -168,7 +168,7 @@ export default function Navigation({ activeIndex }) {
                 className={styles.menuButton}
                 onClick={() => setMenuPage(6)}
               >
-                Contact
+                고객센터
                 <span className={styles.nextSign}>
                   <GrNext />
                 </span>
@@ -189,12 +189,12 @@ export default function Navigation({ activeIndex }) {
                   <Link href='/about'>다르크란?</Link>
                 </li>
                 <li>
-                  <Link href='/about/schedule'>Schedule</Link>
+                  <Link href='/about/schedule'>일정 안내</Link>
                 </li>
 
                 {/* Space between first and second section */}
                 <li>
-                  <Link href='/review'>Our Story</Link>
+                  <Link href='/review'>다르크 이야기</Link>
                 </li>
                 <li>
                   <Link href='/review/recommend'>추천서</Link>
@@ -202,7 +202,7 @@ export default function Navigation({ activeIndex }) {
 
                 {/* Another space between the second and third section */}
                 <li>
-                  <Link href='/living'>Living</Link>
+                  <Link href='/living'>시설 안내</Link>
                 </li>
               </ul>
             )}
@@ -285,7 +285,7 @@ export default function Navigation({ activeIndex }) {
             {menuPage === 6 && (
               <ul>
                 <li>
-                  <Link href='/contact/contactus'>Contact us</Link>
+                  <Link href='/contact/contactus'>문의하기</Link>
                 </li>
                 <li>
                   <Link href='/contact/announcement'>공지사항</Link>
@@ -294,7 +294,7 @@ export default function Navigation({ activeIndex }) {
                   <Link href='/contact/media'>자료실</Link>
                 </li>
                 <li>
-                  <Link href='/contact/resources'>Resources</Link>
+                  <Link href='/contact/resources'>SNS</Link>
                 </li>
               </ul>
             )}
