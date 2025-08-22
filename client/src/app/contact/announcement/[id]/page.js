@@ -1,6 +1,5 @@
 "use client";
 
-
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import NoticeDetailClient from "../../../../../components/NoticeDetailClient";
@@ -39,12 +38,12 @@ export default function NoticeDetailPage() {
         <div className={styles.content}>
           <div className={styles.header}>
             <div className={styles.title}>
-              <h1>공지사항.</h1>
+              <h1>공지사항</h1>
             </div>
             <div className={styles.link}>
-              <Link href="/contact/resources">Contact</Link>
+              <Link href='/contact/resources'>Contact</Link>
               <p>&gt;</p>
-              <Link href="/contact/announcement">
+              <Link href='/contact/announcement'>
                 <h4>공지사항</h4>
               </Link>
             </div>
