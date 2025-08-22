@@ -157,7 +157,7 @@ export default function Navigation({ activeIndex }) {
                 className={styles.menuButton}
                 onClick={() => setMenuPage(5)}
               >
-                재단 소개
+                법인 소개
                 <span className={styles.nextSign}>
                   <GrNext />
                 </span>
@@ -406,7 +406,7 @@ export default function Navigation({ activeIndex }) {
             onMouseEnter={() => handleMouseEnter("aboutus")}
             onMouseLeave={() => handleMouseLeave("aboutus")}
           >
-            <span>재단 소개</span>
+            <span>법인 소개</span>
             <div
               className={styles.dropdown}
               ref={(el) => (dropdownRefs.current.aboutus = el)}
